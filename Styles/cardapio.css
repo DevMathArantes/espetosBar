@@ -15,9 +15,12 @@
 }
 .cardapio p{
     display: flex;
+    text-transform: uppercase;
     justify-content: space-between;
-    padding: 0.8em 1em;
-    font-size: 0.8rem;
+    padding: 1em 1em;
+    font-size: 0.9rem;
+    font-weight: 800;
+    border-bottom: 1px solid;
 }
 .cardapio p span{
     color: var(--corTema2);
