@@ -3,6 +3,7 @@
 @import url('Styles/reset.css');
 @import url('Styles/apresentacao.css');
 @import url('Styles/main.css');
+@import url('Styles/cardapio.css');
 
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -22,16 +23,15 @@ a{
     text-decoration: none;
 }
 h1,h2{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-family: var(--fontDestaque);
     font-weight: 700;
 }
+h2 img{
+    width: 12%;
+}
 p{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: var(--fontPadrao);
     font-weight: 700;
-}
-.aumentarTexto{
-    font-size: 1.8rem;
-    text-align: center;
 }

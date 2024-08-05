@@ -1,4 +1,3 @@
-
 .principal h2{
     display: flex;
     align-items: center;
@@ -6,9 +5,10 @@
     padding: 1em;
     gap: 1%;
 }
-.principal h2 img{
-    width: 12%;
-}
 .principal p{
     padding: 1em;
+    text-align: center;
+}
+.principal hr{
+    color: var(--corTema2);
 }

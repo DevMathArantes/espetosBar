@@ -3,16 +3,17 @@
     padding: 1em 0.5em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 5%;
     position: relative;
-    border-bottom: 3px solid rgb(255, 8, 0);
+    border-bottom: 3px solid var(--corTema2);
 }
 .inicio h1{
     color: var(--corDestaque);
 }
 .inicioLista{
     position: absolute;
-    top: 99%;    
+    top: 100%;    
     left: 0;
     width: 40%;
     display: none;
@@ -46,4 +47,12 @@
 }
 .checkboxNav:checked~ .inicioLista{
     display: block;
+}
+.status{
+    color: var(--corTema2);
+    font-size: 1rem;
+    font-family: var(--fontAlta);
+    border: 2px solid var(--corTema2);
+    padding: 0.5em;
+    border-radius: 5px;
 }

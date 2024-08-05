@@ -1,0 +1,24 @@
+.cardapio img{
+    width: 100%;
+}
+.cardapio h2{
+    flex-direction: column;
+}
+.cardapio h2 span{
+    font-size: 2.2rem;
+    color: var(--corTema2);
+    font-weight: 600;
+    border: 2px solid var(--corTema2);
+    padding: 0.2em;
+    border-radius: 5px;
+    margin-top: 0.3em;
+}
+.cardapio p{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 1em;
+    font-size: 0.8rem;
+}
+.cardapio p span{
+    color: var(--corTema2);
+}
