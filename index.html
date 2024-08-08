@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!--Início da página-->
     <header class="inicio">
+        
         <input type="checkbox" id="check" class="checkboxNav">
         <label class="abrirNav" for="check">
             <span class="abrirNav2"></span>
         </label>
+
+        <!--Nav de contato-->
         <ul class="inicioLista">
             <li>
                 <a href="https://wa.link/dgtak1">WhatApp</a>
@@ -21,10 +26,16 @@
                 <a href="">Instagran</a>
             </li>
         </ul>
+
         <h1>Espeto's Bar</h1>
         <span class="status" id='status'></span>
+
     </header>
+
+    <!--Conteúdo principal-->
     <main class="principal">
+
+        <!--Recepção-->
         <section class="apresentacao">
             <img src="Assets/Imagens/espetosBar.jpg" alt="Logo do espeto`s bar">  
         </section>
@@ -33,11 +44,12 @@
                 Seja bem vindo
             <img src="Assets/Icones/cerveja.png" alt="icone de cerveja">
         </h2>
-        <p>
-            Espeto's Bar um ambiente familiar com chopp gelado e grande variedade em espetos!
-        </p>
+        <p>Espeto's Bar um ambiente familiar com chopp gelado e grande variedade em espetos!</p>
+
+        <!--Cardápio geral-->
         <section class="cardapio">
 
+            <!--Cardápio dos espetos-->
             <h2>Nossa especialidade<br><span>Espetos</span></h2>
             <img src="Assets/Imagens/espetos.jpg" alt="Deliosos espetos">
             <p>Bovino <span>R$ 6,00</span></p>
@@ -59,10 +71,12 @@
             <p>tabua de mandioca e tomate (inteira)<span>R$ 8,00</span></p>
             <p>tabua de mandioca e tomate (meia) <span>R$ 6,00</span></p>
 
-            
+            <!--Carrossel dos gourmets-->
             <div class="swiper">
                 <h2>Especiais da casa<br><span>Combos</span></h2>
                 <div class="swiper-wrapper">
+
+                    <!--Combo P-->
                     <div class="swiper-slide">
                         <img src="Assets/Icones/coroa.png" alt="icone coroa">
                         <div class="swiperItem">
@@ -77,6 +91,8 @@
                             <h4>R$ 36,90</h4>
                         </div>
                     </div>
+
+                    <!--Combo M-->
                     <div class="swiper-slide">
                         <img src="Assets/Icones/coroa.png" alt="icone coroa">
                         <div class="swiperItem">
@@ -91,6 +107,8 @@
                             <h4>R$ 68,90</h4>
                         </div>
                     </div>
+
+                    <!--Combo G-->
                     <div class="swiper-slide">
                         <img src="Assets/Icones/coroa.png" alt="icone coroa">
                         <div class="swiperItem">
@@ -108,6 +126,7 @@
                 </div>
             </div>
 
+            <!--Cardápio dos gourmets-->
             <h2>Experimente nossos<br><span>Gourmets</span></h2>
             <img src="Assets/Imagens/gourmets.jpg" alt="melhores gourmets">
             <p><span>escolha dois sabores em um único espeto</span></p>
@@ -117,6 +136,7 @@
             <p>queijo coalho com com goiabada <span>R$ 10,00</span></p>
             <p>carne com cheddar <span>R$ 10,00</span></p>
 
+            <!--Cardápio das bebidas-->
             <h2>Não pode faltar<br><span>Bebidas</span></h2>
             <img src="Assets/Imagens/bebidas.jpg" alt="melhores bebidas">
             <p>Refrigerante lata <span>R$ 5,00</span></p>
@@ -128,6 +148,7 @@
             <p>Suco de Laranja 500 ML <span>R$ 10,00</span></p>
             <p>Suco de Laranja 1L <span>R$ 18,00</span></p>
 
+            <!--Cardápio das cervejas-->
             <h2>Curta o ambiente <br><span>Cervejas</span></h2>
             <img src="Assets/Imagens/cervejas.jpg" alt="cerveja gelada">
             <p>Skol 600ML <span>R$ 10,00</span></p>
@@ -138,6 +159,7 @@
             <p>Heineken Zero Álcool <span>R$ 9,00</span></p>
             <p>Cerveja lata <span>R$ 5,00</span></p>
 
+            <!--Cardápio dos chopps-->
             <h2>Aproveite o que há de melhor <br><span>Chopps</span></h2>
             <div class="cardapioDestaque">
                 <p>Chop ECOBIER 300ML <span>R$ 7,00</span></p>
@@ -145,47 +167,49 @@
             </div>
             <div class="cardapioDestaque">
                 <img src="Assets/Imagens/chopp.jpg" alt="melhor chopp">
-                <p>Chop ECOBIER 600 <span>R$ 12,00</span></p>
+                <p>Chop ECOBIER 600ML <span>R$ 12,00</span></p>
             </div>
             <div class="cardapioDestaque">
                 <p>Chopp Vinho lata <span>R$ 8,00</span></p>
-                <img src="Assets/Imagens/chopp.jpg" alt="melhor chopp"> 
+                <img src="" alt="melhor chopp"> 
             </div>
             <br><br><br>
+
+            <!--Vídeo de agradecimento-->
             <h2>ESPETO'S BAR AGRADECE A SUA <span>PREFERÊNCIA</span></h2>
             <video onclick="rodarVideo()" id="videoCombo" poster="Assets/Icones/play.png">
                 <source src="Assets/Videos/combo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+
         </section>
+
     </main>
 
+    <!--Créditos de desenvolvimento-->
     <footer>
         <p>Developed by Math.Arantes</p>
         <p>matheusoficial1411@gmail.com</p>
-        <a href="matheusarantesferreira.com.br">Visite meu portifólio</a>
+        <a href="https://matheusarantesferreira.com.br/">Visite meu portifólio</a>
     </footer>
 
+    <!--Importe do swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <!--Comandos js internos ficam dentro do <script>...</script>-->
+    <!--script do swiper-->
     <script>
-
-        //Função do carrossel
         const swiper = new Swiper('.swiper', {
-
-            //Espaço entre os slides
             spaceBetween: 50,
-
-            //Slides por view
             slidesPerView: 1.5,
-
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
             },
         });
     </script>
+
+    <!--Funções javas-script-->
     <script src="script.js"></script>
+
 </body>
 </html>
