@@ -1,6 +1,10 @@
 .cardapio img{
     width: 100%;
 }
+.cardapio video{
+    width: 100%;
+    height: 75vw;
+}
 .cardapio h2{
     flex-direction: column;
 }

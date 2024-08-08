@@ -1,0 +1,9 @@
+footer{
+    margin-top: 5em;
+    background-color: var(--corTema);
+    padding: 2em;
+    text-align: center;
+    color: var(--corDestaque);
+    font-family: var(--fontDestaque);
+    font-weight: 700;
+}
