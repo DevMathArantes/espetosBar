@@ -6,4 +6,13 @@ footer{
     color: var(--corDestaque);
     font-family: var(--fontDestaque);
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+footer a{
+    color: var(--corDestaque);
+    padding: 1em;
+    border: 2px solid var(--corDestaque);
+    border-radius: 20px;
 }
