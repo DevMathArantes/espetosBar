@@ -38,3 +38,6 @@ p{
     font-family: var(--fontPadrao);
     font-weight: 700;
 }
+#info{
+    color: var(--corTema2);
+}
