@@ -1,9 +1,0 @@
-.apresentacao{
-    background-color: var(--corTema);
-    display: flex;
-    justify-content: center;
-    padding: 4em 0;
-}
-.apresentacao img{
-    width: 90%;  
-}

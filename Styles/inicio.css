@@ -20,7 +20,6 @@
     border-right: 3px solid var(--corTema2);
     border-bottom: 3px solid var(--corTema2);
     padding: 1em 0;
-    
     background-color: var(--corTema);
 }
 .inicioLista li{
@@ -55,4 +54,22 @@
     border: 2px solid var(--corTema2);
     padding: 0.5em;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 724px){
+    .inicio h1{
+        font-size: 2.5rem
+    }
+    .status{
+        font-size: 2rem;
+    }
+    .inicioLista li a{
+        font-size: 1.5rem;
+    }
+    .inicioLista{
+        width: 50%;
+    }
+    .inicioLista li{
+        padding: 2em 0;
+    }
 }

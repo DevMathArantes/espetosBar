@@ -13,3 +13,8 @@
 .principal hr{
     color: var(--corTema2);
 }
+.logo{
+    background-color: black;
+    padding: 2em 10%;
+    width: 80%;
+}

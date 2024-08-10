@@ -37,6 +37,8 @@
 .cardapioDestaque p{
     font-size: 1.5rem;
     flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
     width: 65%;
 }
 .cardapioDestaque p span{

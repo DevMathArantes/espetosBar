@@ -1,6 +1,6 @@
 .swiper{
     background-color: var(--corTema);
-    padding: 3em 0 5em 1em;
+    padding: 0 0 2em 1em;
     margin: 5em 0;
 }
 .swiper img{
@@ -13,9 +13,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75vw;
+    height: auto;
     border-radius: 10px;
     border: 2px solid var(--corTema3);
+    padding: 0 0 2em 0;
 }
 .swiperItem h3{
     color: var(--corTema3);
