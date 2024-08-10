@@ -55,21 +55,32 @@
     padding: 0.5em;
     border-radius: 5px;
 }
+.inicio nav{
+    display: none;
+}
 
 @media screen and (min-width: 724px){
+    .abrirNav{
+        display: none;
+    }
+    .inicio{
+        justify-content: end;
+        
+    }
+    .inicio nav{
+        display: flex;
+        gap: 2em;
+    }
     .inicio h1{
-        font-size: 2.5rem
+        display: none;
     }
-    .status{
-        font-size: 2rem;
+    .inicio a{
+        color: var(--corDestaque);
+        font-family: var(--fontAlta);
+        font-size: 1.2rem;
     }
-    .inicioLista li a{
-        font-size: 1.5rem;
-    }
-    .inicioLista{
-        width: 50%;
-    }
-    .inicioLista li{
-        padding: 2em 0;
+    .inicio a:hover{
+        transition: 1s;
+        color: var(--corTema2);
     }
 }

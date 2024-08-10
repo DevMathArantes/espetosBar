@@ -47,3 +47,29 @@
     font-weight: 800;
     color: var(--corTema3);
 }
+
+@media screen and (min-width: 724px){
+    .swiperItem{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .swiperItem h3{
+        width: 100%;
+        text-align: center;
+    }
+    .swiperItem ul{
+        width: 48%;
+    }
+    .precos{
+        width: 48%;
+    }
+    .swiperItem ul, .precos{
+        text-align: center;
+    }
+    .swiper img{
+        width: 15%;
+    }
+    .swiperItem li{
+        text-align: left;
+    }
+}

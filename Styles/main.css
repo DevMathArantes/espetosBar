@@ -9,6 +9,7 @@
 .principal p{
     padding: 1em;
     text-align: center;
+    font-family: var(--fontPadrao);
 }
 .principal hr{
     color: var(--corTema2);
@@ -17,4 +18,25 @@
     background-color: black;
     padding: 2em 10%;
     width: 80%;
+}
+.ambiente{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#info{
+    color: var(--corTema2);
+}
+
+@media screen and (min-width: 724px){
+    .logo{
+        width: 35%;
+        padding: 2em 1em;
+    }
+    .recepcao{
+        display: flex;
+    }
+    .recepcaoInfo{
+        background-color: var(--corTema);
+        color: var(--corDestaque);
+    }
 }
