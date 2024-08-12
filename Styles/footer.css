@@ -9,10 +9,22 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    align-items: center;
 }
 footer a{
     color: var(--corDestaque);
     padding: 1em;
     border: 2px solid var(--corDestaque);
     border-radius: 20px;
+}
+
+@media screen and (min-width: 1300px){
+    footer a{
+        width: 50%;
+    }
+    footer a:hover{
+        background-color: var(--corDestaque);
+        color: var(--corTema);
+        transition: 1s;
+    }
 }

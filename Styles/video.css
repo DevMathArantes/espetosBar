@@ -12,3 +12,12 @@ video{
         display: flex;
     }
 }
+
+@media screen and (min-width: 1300px){
+    video{
+        width: 20%;
+    }
+    .agradecimento{
+        justify-content: center;
+    }
+}

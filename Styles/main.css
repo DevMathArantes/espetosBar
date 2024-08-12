@@ -25,6 +25,7 @@
 }
 #info{
     color: var(--corTema2);
+    font-weight: 600;
 }
 
 @media screen and (min-width: 724px){
