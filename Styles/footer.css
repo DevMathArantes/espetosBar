@@ -1,0 +1,28 @@
+footer{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 2em;
+    margin-top: 3em;
+    text-align: center;
+}
+footer h2{
+    font-family: var(--fontAlta);
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+}
+footer p{
+    font-family: var(--fontDestaque);
+    font-size: 0.8rem;
+}
+footer a{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor1);
+    font-family: var(--fontPadrao);
+    font-size: 0.7rem;
+}
+footer a img{
+    width: 5%;
+}
