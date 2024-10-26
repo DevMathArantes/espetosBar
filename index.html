@@ -10,252 +10,105 @@
 <body>
 
     <!--Início da página-->
-    <header class="inicio">
-        
-        <input type="checkbox" id="check" class="checkboxNav">
-        <label class="abrirNav" for="check">
-            <span class="abrirNav2"></span>
-        </label>
-
-        <!--Links-->
-        <nav>
-            <a href="https://wa.link/dgtak1">WhatsApp</a>
-            <a href="https://www.instagram.com/espetosbararamina?igsh=ODF1MTlzN2trZGVm">Instagran</a>
-        </nav>
-
-        <!--Nav de contato-->
-        <ul class="inicioLista">
-            <li>
-                <a href="https://wa.link/dgtak1">WhatApp</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/espetosbararamina?igsh=ODF1MTlzN2trZGVm">Instagran</a>
-            </li>
-        </ul>
-
-        <h1>Espeto's Bar</h1>
-        <span class="status" id='status'></span>
-
+    <header>
+        <h1>Seja bem vindo</h1>
+        <img src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
     </header>
 
+    <!--Contato-->
+    <nav>
+        <span id="status"></span>
+        <div class="redes">
+            <a href=""><img src="Assets/Icones/whatsapp.png" alt="icone whatsapp"></a>
+            <a href=""><img src="Assets/Icones/instagram.png" alt="icone instagram"></a>
+        </div>
+    </nav>
+
     <!--Conteúdo principal-->
-    <main class="principal">
+    <main>
 
-        <!--Recepção-->
-        <section class="recepcao">
-            <img class="logo" src="Assets/Imagens/espetosBar.jpg" alt="Logo do espeto`s bar">  
-            <div class="recepcaoInfo">
-                <h2>
-                    <img src="Assets/Icones/cerveja.png" alt="icone de cerveja">
-                        Seja bem vindo
-                    <img src="Assets/Icones/cerveja.png" alt="icone de cerveja">
-                </h2>
-                <p class="ambiente">Espeto's Bar um ambiente familiar com chopp gelado e grande variedade em espetos!</p>
-                <p id="info">Rua Capitão Scandiuzzi Número 861 Centro Aramina, das 18h ás 23h</p>
-            </div>
-        </section>
+        <!--Espetos-->
+        <img src="Assets/Imagens/espetos.jpg" alt="imagem de espetos">
+        <div class="cardapio">
+            <input class="ocultar botaoEscondido" type="checkbox" id="Espetos">
+            <label for="Espetos">Ver Espetos</label>
+            <ul class="listaEscondida">
+                <li>Bovino <span>R$ 6,00</span></li>
+                <li>Coração <span>R$ 6,00</span></li>
+                <li>queijo coalho <span>R$ 7,00</span></li>
+                <li>queijo bolinha <span>R$ 7,00</span></li>
+                <li>queijo bolinha defumado <span>R$ 7,00</span></li>
+                <li>kafta bovina <span>R$ 6,00</span></li>
+                <li>kafta de frango <span>R$ 6,00</span></li>
+                <li>kafta recheada <span>R$ 8,00</span></li>
+                <li>linguiça suína <span>R$ 6,00</span></li>
+                <li>linguiça apimentada <span>R$ 6,00</span></li>
+                <li>linguiça toscana <span>R$ 6,00</span></li>
+                <li>pão de alho <span>R$ 6,00</span></li>
+                <li>medalhão de frango <span>R$ 7,00</span></li>
+                <li>medalhão de mussarela <span>R$ 7,00</span></li>
+                <li>medalhão romeu e julieta <span>R$ 8,00</span></li>
+                <li>medalhão mandioca <span>R$ 8,00</span></li>
+                <li>Panceta <span>R$ 6,00</span></li>
+                <li>tabua de mandioca e tomate (inteira)<span>R$ 8,00</span>
+            </ul>
+        </div>
 
-        <!--Cardápio geral-->
-        <section class="cardapio">
+        <!--Gourmets-->
+        <img src="Assets/Imagens/gourmets.jpg" alt="imagem de gourmets">
+        <div class="cardapio">
+            <input class="ocultar botaoEscondido" type="checkbox" id="Gourmets">
+            <label for="Gourmets">Ver Gourmets</label>
+            <ul class="listaEscondida">
+                <li><span>escolha dois sabores em um único espeto</span></li>
+                <li>Queio coalho com nutella <span>R$ 10,00</span></li>
+                <li>queijo coalho com mel <span>R$ 10,00</span></li>
+                <li>queijo coalho com doce de leite <span>R$ 10,00</span></li>
+                <li>queijo coalho com com goiabada <span>R$ 10,00</span></li>
+                <li>carne com cheddar <span>R$ 10,00</span></li>
+            </ul>
+        </div>
+        
+        <!--Bebidas-->
+        <img src="Assets/Imagens/bebidas.jpg" alt="imagem de bebidas">
+        <div class="cardapio">
+            <input class="ocultar botaoEscondido" type="checkbox" id="Bebidas">
+            <label for="Bebidas">Ver Bebidas</label>
+            <ul class="listaEscondida">
+                <li>Refrigerante lata <span>R$ 5,00</span></li>
+                <li>Coca-cola 2 Litros <span>R$ 12,00</span></li>
+                <li>Coca-cola 1 Litro <span>R$ 8,00</span></li>
+                <li>Guaraná Antártica 1 Litro <span>R$ 8,00</span></li>
+                <li>Água Mineral (com ou sem gás) <span>R$ 3,00</span></li>
+                <li>Suco de Laranja 250 ML <span>R$ 8,00</span></li>
+                <li>Suco de Laranja 500 ML <span>R$ 10,00</span></li>
+                <li>Suco de Laranja 1L <span>R$ 18,00</span></li>
+            </ul>
+        </div>
 
-            <!--Cardápio dos espetos-->
-            <div class="cardapioDivisao">
-                <div>
-                    <h2>Nossa especialidade<br><span>Espetos</span></h2>
-                    <img src="Assets/Imagens/espetos.jpg" alt="Deliosos espetos">
-                </div>
-                <ol>
-                    <li>Bovino <span>R$ 6,00</span></li>
-                    <li>Coração <span>R$ 6,00</span></li>
-                    <li>queijo coalho <span>R$ 7,00</span></li>
-                    <li>queijo bolinha <span>R$ 7,00</span></li>
-                    <li>queijo bolinha defumado <span>R$ 7,00</span></li>
-                    <li>kafta bovina <span>R$ 6,00</span></li>
-                    <li>kafta de frango <span>R$ 6,00</span></li>
-                    <li>kafta recheada <span>R$ 8,00</span></li>
-                    <li>linguiça suína <span>R$ 6,00</span></li>
-                    <li>linguiça apimentada <span>R$ 6,00</span></li>
-                    <li>linguiça toscana <span>R$ 6,00</span></li>
-                    <li>pão de alho <span>R$ 6,00</span></li>
-                    <li>medalhão de frango <span>R$ 7,00</span></li>
-                    <li>medalhão de mussarela <span>R$ 7,00</span></li>
-                    <li>medalhão romeu e julieta <span>R$ 8,00</span></li>
-                    <li>medalhão mandioca <span>R$ 8,00</span></li>
-                    <li>Panceta <span>R$ 6,00</span></li>
-                    <li>tabua de mandioca e tomate (inteira)<span>R$ 8,00</span></li>
-                    <li>tabua de mandioca e tomate (meia) <span>R$ 6,00</span></li>
-                </ol>
-            </div>
-
-            <!--Carrossel dos combos-->
-            <div class="swiper">
-                <h2>Especiais da casa<br><span>Combos</span></h2>
-                <div class="swiper-wrapper">
-
-                    <!--Combo P-->
-                    <div class="swiper-slide">
-                        <img src="Assets/Icones/coroa.png" alt="icone coroa">
-                        <div class="swiperItem">
-                            <h3>Combo P</h3>
-                            <ul>
-                                <li>2 Espetos de R$ 6,00</li>
-                                <li>1 Espeto de R$ 7,00</li>
-                                <li>1/2 Tábua</li>
-                                <li>1 Torre de 1 Litro de chopp</li>
-                            </ul>
-                            <div class="precos">
-                                <span>R$ 44,00</span>
-                                <h4>R$ 36,90</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Combo M-->
-                    <div class="swiper-slide">
-                        <img src="Assets/Icones/coroa.png" alt="icone coroa">
-                        <div class="swiperItem">
-                            <h3>Combo M</h3>
-                            <ul>
-                                <li>4 Espetos de R$ 6,00</li>
-                                <li>2 Espeto de R$ 7,00</li>
-                                <li>1/2 Tábua</li>
-                                <li>1 Torre de 2 Litro de chopp</li>
-                            </ul>
-                            <div class="precos">
-                                <span>R$ 83,00</span>
-                                <h4>R$ 68,90</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Combo G-->
-                    <div class="swiper-slide">
-                        <img src="Assets/Icones/coroa.png" alt="icone coroa">
-                        <div class="swiperItem">
-                            <h3>Combo G</h3>
-                            <ul>
-                                <li>6 Espetos de R$ 6,00</li>
-                                <li>4 Espeto de R$ 7,00</li>
-                                <li>1 Tábua</li>
-                                <li>1 Torre de 3 Litro de chopp</li>
-                            </ul>
-                            <div class="precos">
-                                <span>R$ 131,00</span>
-                                <h4>R$ 109,90</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Cardápio dos gourmets-->
-           <div class="cardapioDivisao">
-                <div>
-                    <h2>Experimente nossos<br><span>Gourmets</span></h2>
-                    <img src="Assets/Imagens/gourmets.jpg" alt="melhores gourmets">
-                </div>
-                <ol>
-                    <li><span>escolha dois sabores em um único espeto</span></li>
-                    <li>Queio coalho com nutella <span>R$ 10,00</span></li>
-                    <li>queijo coalho com mel <span>R$ 10,00</span></li>
-                    <li>queijo coalho com doce de leite <span>R$ 10,00</span></li>
-                    <li>queijo coalho com com goiabada <span>R$ 10,00</span></li>
-                    <li>carne com cheddar <span>R$ 10,00</span></li>
-                </ol>
-           </div>
-
-            <!--Cardápio das bebidas-->
-            <div class="cardapioDivisao">
-                <div>
-                    <h2>Não pode faltar<br><span>Bebidas</span></h2>
-                    <img src="Assets/Imagens/bebidas.jpg" alt="melhores bebidas">
-                </div>
-                <ol>
-                    <li>Refrigerante lata <span>R$ 5,00</span></li>
-                    <li>Coca-cola 2 Litros <span>R$ 12,00</span></li>
-                    <li>Coca-cola 1 Litro <span>R$ 8,00</span></li>
-                    <li>Guaraná Antártica 1 Litro <span>R$ 8,00</span></li>
-                    <li>Água Mineral (com ou sem gás) <span>R$ 3,00</span></li>
-                    <li>Suco de Laranja 250 ML <span>R$ 8,00</span></li>
-                    <li>Suco de Laranja 500 ML <span>R$ 10,00</span></li>
-                    <li>Suco de Laranja 1L <span>R$ 18,00</span></li>
-                </ol>
-            </div>
-
-            <!--Cardápio das cervejas-->
-            <div class="cardapioDivisao">
-                <div>
-                    <h2>Curta o ambiente <br><span>Cervejas</span></h2>
-                    <img src="Assets/Imagens/cervejas.jpg" alt="cerveja gelada">
-                </div>
-                <ol>
-                    <li>Skol 600ML <span>R$ 10,00</span></li>
-                    <li>Brama 600ML <span>R$ 10,00</span></li>
-                    <li>Antártica 600ML <span>R$ 10,00</span></li>
-                    <li>Heineken 600ML <span>R$ 14,00</span></li>
-                    <li>Heineken 250ML <span>R$ 7,00</span></li>
-                    <li>Heineken Zero Álcool <span>R$ 9,00</span></li>
-                    <li>Cerveja lata <span>R$ 5,00</span></li>
-                </ol>
-            </div>
-
-            <!--Cardápio dos chopps-->
-            <div class="chopps">
-                <h2>Aproveite o que há de melhor <br><span>Chopps</span></h2>
-                <div class="cardapioDestaque">
-                    <p>Chop ECOBIER 300ML <span>R$ 7,00</span></p>
-                    <img src="Assets/Imagens/choppP.jpg" alt="melhor chopp"> 
-                </div>
-                <div class="cardapioDestaque inverterFlex">
-                    <img src="Assets/Imagens/chopp.jpg" alt="melhor chopp">
-                    <p>Chop ECOBIER 600ML <span>R$ 12,00</span></p>
-                </div>
-                <div class="cardapioDestaque">
-                    <p>Chopp Vinho lata <span>R$ 8,00</span></p>
-                    <img src="Assets/Imagens/vinhoLata.jpg" alt="melhor chopp"> 
-                </div>
-                <div class="cardapioDestaque inverterFlex">
-                    <img src="Assets/Imagens/torreChopp.jpg" alt="torre de chop">
-                    <p>Torre de chopp <span>R$ 20,00 / Litro</span></p>
-                </div>
-            </div>
-
-            <!--Vídeo de agradecimento-->
-            <div class="agradecimento">
-                <h2>ESPETO'S BAR AGRADECE A SUA <span>PREFERÊNCIA</span></h2>
-                <video onclick="rodarVideo()" id="videoCombo" poster="Assets/Icones/play.png">
-                    <source src="Assets/Videos/combo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
+        <!--Cervejas-->
+        <img src="Assets/Imagens/cervejas.jpg" alt="imagem de cervejas">
+        <div class="cardapio">
+            <input class="ocultar botaoEscondido" type="checkbox" id="Cervejas">
+            <label for="Cervejas">Ver Cervejas</label>
+            <ul class="listaEscondida">
+                <li>Skol 600ML <span>R$ 10,00</span></li>
+                <li>Brama 600ML <span>R$ 10,00</span></li>
+                <li>Antártica 600ML <span>R$ 10,00</span></li>
+                <li>Heineken 600ML <span>R$ 14,00</span></li>
+                <li>Heineken 250ML <span>R$ 7,00</span></li>
+                <li>Heineken Zero Álcool <span>R$ 9,00</span></li>
+                <li>Cerveja lata <span>R$ 5,00</span></li>
+            </ul>
+        </div>
 
     </main>
 
     <!--Créditos de desenvolvimento-->
     <footer>
-        <p>Developed by Math.Arantes</p>
-        <p>matheusoficial1411@gmail.com</p>
-        <a href="https://matheusarantesferreira.com.br/">Visite meu portifólio</a>
+        
     </footer>
-
-    <!--Importe do swiper-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <!--script do swiper-->
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 50,
-            slidesPerView: 1.5,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
-    </script>
-
-    <!--Funções javas-script-->
     <script src="script.js"></script>
-
 </body>
 </html>

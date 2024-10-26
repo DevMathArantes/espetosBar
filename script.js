@@ -16,13 +16,7 @@ function aberto(){
     }
 }
 
-//Rodar vídeo ao clicar
-function rodarVideo(){
-    const video = document.getElementById('videoCombo');
-    video.addEventListener('click', () => {
-    video.play();
-});
-}
+
 
 //Chamando função
 aberto();

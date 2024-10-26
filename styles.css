@@ -1,12 +1,7 @@
 /*Estilos*/
-@import url('Styles/inicio.css');
-@import url('Styles/reset.css');
-@import url('Styles/apresentacao.css');
+@import url('Styles/header.css');
 @import url('Styles/main.css');
-@import url('Styles/cardapio.css');
-@import url('Styles/swiper.css');
-@import url('Styles/footer.css');
-@import url('Styles/video.css');
+@import url('Styles/nav.css');
 
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -14,23 +9,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
-    --corTema: #000000;
-    --corTema2: #ff0000;
-    --corTema3: #ffd900;
-    --corDestaque: #ffffff;
     --fontDestaque: "Montserrat", sans-serif;
     --fontAlta: "Poppins", sans-serif;
     --fontPadrao: "Roboto", sans-serif;
+    --cor1: #f8f8f8;
+    --cor2: #000000;
+    --cor3: #d81111;
+    --cor4: #e6e6e6;
 }
 
-a{
-    text-decoration: none;
+/*Regras*/
+*{
+    box-sizing: border-box;
 }
-h1,h2{
-    font-size: 1.7rem;
-    font-family: var(--fontDestaque);
-    font-weight: 700;
+.ocultar{
+    display: none;
 }
-h2 img{
-    width: 12%;
+body{
+    margin: 0;
+    background-color: var(--cor4);
+    background-image: url(Assets/Icones/espeto.png);
+    background-size: 10%;
 }

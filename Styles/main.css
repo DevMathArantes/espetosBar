@@ -1,43 +1,60 @@
-.principal h2{
+main{
     display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1em;
-    gap: 1%;
 }
-.principal p{
-    padding: 1em;
-    text-align: center;
-    font-family: var(--fontPadrao);
-}
-.principal hr{
-    color: var(--corTema2);
-}
-.logo{
-    background-color: black;
-    padding: 2em 10%;
-    width: 80%;
-}
-.ambiente{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-#info{
-    color: var(--corTema2);
-    font-weight: 600;
+main img{
+    width: 50%;
+    border: 2px solid var(--cor2);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--cor2);
 }
 
-@media screen and (min-width: 724px){
-    .logo{
-        width: 35%;
-        padding: 2em 1em;
-    }
-    .recepcao{
-        display: flex;
-    }
-    .recepcaoInfo{
-        background-color: var(--corTema);
-        color: var(--corDestaque);
-    }
+label{
+    display: flex;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    justify-content: center;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-family: var(--fontPadrao);
+    background-image: url('../Assets/Icones/setaDireita.png');
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+.listaEscondida{
+    display: none;
+}
+.botaoEscondido:checked~.listaEscondida{
+    display: flex;
+}
+.botaoEscondido:checked~label{
+    border-radius: 10px 10px 0 0;
+    background-image: url('../Assets/Icones/setaBaixo.png');
+}
+main ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: var(--fontPadrao);
+    font-size: 0.7rem;
+    gap: 0.5em;
+    border: 2px solid var(--cor2);
+    border-radius: 0 0 10px 10px;
+    background-color: var(--cor1);
+}
+main ul li{
+    display: flex;
+    justify-content: space-between;
+}
+main ul li span{
+    color: var(--cor3);
+    font-weight: 600;
+}
+.cardapio{
+    width: 98%;
 }
