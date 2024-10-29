@@ -16,7 +16,10 @@ function aberto(){
     }
 }
 
-
+//Adicionar item
+function adicionarItem(){
+    
+}
 
 //Chamando função
 aberto();

@@ -18,6 +18,8 @@
     --cor2: #000000;
     --cor3: #d81111;
     --cor4: #e6e6e6;
+    --cor5: #999999;
+    --cor6: #ffc400;
 }
 
 /*Regras*/
@@ -42,6 +44,6 @@ h1, h2, h3, h4, h5, h6{
 p, a{
     font-family: var(--fontPadrao);
 }
-span{
+span, button{
     font-family: var(--fontDestaque);
 }

@@ -33,24 +33,168 @@
             <input class="ocultar botaoEscondido" type="checkbox" id="Espetos">
             <label for="Espetos">Ver Espetos</label>
             <ul class="listaEscondida">
-                <li>Bovino <span>R$ 6,00</span></li>
-                <li>Coração <span>R$ 6,00</span></li>
-                <li>queijo coalho <span>R$ 7,00</span></li>
-                <li>queijo bolinha <span>R$ 7,00</span></li>
-                <li>queijo bolinha defumado <span>R$ 7,00</span></li>
-                <li>kafta bovina <span>R$ 6,00</span></li>
-                <li>kafta de frango <span>R$ 6,00</span></li>
-                <li>kafta recheada <span>R$ 8,00</span></li>
-                <li>linguiça suína <span>R$ 6,00</span></li>
-                <li>linguiça apimentada <span>R$ 6,00</span></li>
-                <li>linguiça toscana <span>R$ 6,00</span></li>
-                <li>pão de alho <span>R$ 6,00</span></li>
-                <li>medalhão de frango <span>R$ 7,00</span></li>
-                <li>medalhão de mussarela <span>R$ 7,00</span></li>
-                <li>medalhão romeu e julieta <span>R$ 8,00</span></li>
-                <li>medalhão mandioca <span>R$ 8,00</span></li>
-                <li>Panceta <span>R$ 6,00</span></li>
-                <li>tabua de mandioca e tomate (inteira)<span>R$ 8,00</span>
+                <li>
+                    <p>bovino</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>coração</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo coalho</p> 
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo bolinha</p> 
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo bolinha defumado</p> 
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>kafta bovina</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>kafta de frango</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>kafta recheada</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>linguiça suína</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>linguiça apimentada</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>linguiça toscana</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>pão de alho</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>medalhão de frango</p> 
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>medalhão de mussarela</p> 
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>medalhão romeu e julieta</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>medalhão mandioca</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>panceta</p> 
+                    <span>R$ 6,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>tabua de mandioca e tomate (inteira)</p>
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -60,12 +204,51 @@
             <input class="ocultar botaoEscondido" type="checkbox" id="Gourmets">
             <label for="Gourmets">Ver Gourmets</label>
             <ul class="listaEscondida">
-                <li><span>escolha dois sabores em um único espeto</span></li>
-                <li>Queio coalho com nutella <span>R$ 10,00</span></li>
-                <li>queijo coalho com mel <span>R$ 10,00</span></li>
-                <li>queijo coalho com doce de leite <span>R$ 10,00</span></li>
-                <li>queijo coalho com com goiabada <span>R$ 10,00</span></li>
-                <li>carne com cheddar <span>R$ 10,00</span></li>
+                <li>
+                    <p>queio coalho com nutella</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo coalho com mel</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo coalho com doce de leite</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>queijo coalho com com goiabada</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>carne com cheddar</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
             </ul>
         </div>
         
@@ -75,14 +258,78 @@
             <input class="ocultar botaoEscondido" type="checkbox" id="Bebidas">
             <label for="Bebidas">Ver Bebidas</label>
             <ul class="listaEscondida">
-                <li>Refrigerante lata <span>R$ 5,00</span></li>
-                <li>Coca-cola 2 Litros <span>R$ 12,00</span></li>
-                <li>Coca-cola 1 Litro <span>R$ 8,00</span></li>
-                <li>Guaraná Antártica 1 Litro <span>R$ 8,00</span></li>
-                <li>Água Mineral (com ou sem gás) <span>R$ 3,00</span></li>
-                <li>Suco de Laranja 250 ML <span>R$ 8,00</span></li>
-                <li>Suco de Laranja 500 ML <span>R$ 10,00</span></li>
-                <li>Suco de Laranja 1L <span>R$ 18,00</span></li>
+                <li>
+                    <p>Refrigerante lata</p> 
+                    <span>R$ 5,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Coca-cola 2 Litros</p> 
+                    <span>R$ 12,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Coca-cola 1 Litro</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Guaraná Antártica 1 Litro</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Água Mineral (com ou sem gás)</p> 
+                    <span>R$ 3,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Suco de Laranja 250 ML</p> 
+                    <span>R$ 8,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Suco de Laranja 500 ML</p> 
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Suco de Laranja 1L</p> 
+                    <span>R$ 18,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -92,13 +339,69 @@
             <input class="ocultar botaoEscondido" type="checkbox" id="Cervejas">
             <label for="Cervejas">Ver Cervejas</label>
             <ul class="listaEscondida">
-                <li>Skol 600ML <span>R$ 10,00</span></li>
-                <li>Brama 600ML <span>R$ 10,00</span></li>
-                <li>Antártica 600ML <span>R$ 10,00</span></li>
-                <li>Heineken 600ML <span>R$ 14,00</span></li>
-                <li>Heineken 250ML <span>R$ 7,00</span></li>
-                <li>Heineken Zero Álcool <span>R$ 9,00</span></li>
-                <li>Cerveja lata <span>R$ 5,00</span></li>
+                <li>
+                    <p>Skol 600ML</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Brama 600ML</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Antártica 600ML</p>
+                    <span>R$ 10,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Heineken 600ML</p>
+                    <span>R$ 14,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Heineken 250ML</p>
+                    <span>R$ 7,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Heineken Zero Álcool</p>
+                    <span>R$ 9,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
+                <li>
+                    <p>Cerveja lata</p>
+                    <span>R$ 5,00</span>
+                    <div class="selecionar">
+                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
+                        <button onclick="retirar()" class="subtrai">- MENOS</button>
+                        <span>.0</span>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -111,6 +414,10 @@
 
     <!--Créditos de desenvolvimento-->
     <footer>
+        <div class="finalizar">
+            <p>Total: <span>R$ 0,00</span></p>
+            <button>Finalizar</button>
+        </div>
         <h2>MAF</h2>
         <p>Developed by Matheus Arantes Ferreira</p>
         <a href="">Acesse nosso site <img src="Assets/Icones/link.png" alt="icone links"></a>    
