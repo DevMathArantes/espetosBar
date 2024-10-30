@@ -414,10 +414,24 @@
 
     <!--Créditos de desenvolvimento-->
     <footer>
+
         <div id="finalizar" class="finalizar">
             <p>Total: R$<span id="Total"></span></p>
-            <button>Finalizar</button>
+            <button onclick="abrirModal()">Finalizar</button>
         </div>
+        <div id="fundoModal"></div>
+        <form id="modal">
+            <img onclick="fecharModal()" class="fechar" src="Assets/Icones/X.png" alt="icone fechar janela">
+            <img class="logoFinal" src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
+            <input class="inputFinal" type="text" placeholder="Digite seu nome">
+            <div class="entrega">
+                <input type="checkbox" id="entrega">
+                <label for="entrega">Para entrega</label>
+                <input id="campoEntrega" class="inputFinal" type="text" placeholder="Digite seu endereço">
+            </div>
+            <button class="enviar">Enviar pedido</button>
+        </form>
+
         <h2>MAF</h2>
         <p>Developed by Matheus Arantes Ferreira</p>
         <a href="https://matheusarantesferreira.com.br/">Acesse nosso site <img src="Assets/Icones/link.png" alt="icone links"></a>    

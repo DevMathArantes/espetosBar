@@ -63,4 +63,16 @@ function retirarItem(identificador){
     }
 }
 
+//abre o modal
+function abrirModal(){
+    get('modal').style.display='flex';
+    get('fundoModal').style.display='block';
+}
+
+//fecha o modal
+function fecharModal(){
+    get('modal').style.display='none';
+    get('fundoModal').style.display='none';
+}
+
 aberto();
