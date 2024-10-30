@@ -34,30 +34,30 @@
             <label for="Espetos">Ver Espetos</label>
             <ul class="listaEscondida">
                 <li>
-                    <p>bovino</p> 
-                    <span>R$ 6,00</span>
+                    <p id="produto1">bovino</p> 
+                    <span id="valor1">R$ 6.50</span>
                     <div class="selecionar">
-                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
-                        <button onclick="retirar()" class="subtrai">- MENOS</button>
-                        <span>.0</span>
+                        <button onclick="adicionarItem('1')" class="soma">+ MAIS</button>
+                        <button onclick="retirarItem('1')" class="subtrai">- MENOS</button>
+                        <span id="quantidade1">0</span>
                     </div>
                 </li>
                 <li>
-                    <p>coração</p> 
-                    <span>R$ 6,00</span>
+                    <p id="produto2">coração</p> 
+                    <span id="valor2">R$ 6.00</span>
                     <div class="selecionar">
-                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
-                        <button onclick="retirar()" class="subtrai">- MENOS</button>
-                        <span>.0</span>
+                        <button onclick="adicionarItem('2')" class="soma">+ MAIS</button>
+                        <button onclick="retirarItem('2')" class="subtrai">- MENOS</button>
+                        <span id="quantidade2">0</span>
                     </div>
                 </li>
                 <li>
-                    <p>queijo coalho</p> 
-                    <span>R$ 7,00</span>
+                    <p id="produto3">queijo coalho</p> 
+                    <span id="valor3">R$ 7,00</span>
                     <div class="selecionar">
-                        <button onclick="adicionarItem()" class="soma">+ MAIS</button>
-                        <button onclick="retirar()" class="subtrai">- MENOS</button>
-                        <span>.0</span>
+                        <button onclick="adicionarItem('3')" class="soma">+ MAIS</button>
+                        <button onclick="retirar('3')" class="subtrai">- MENOS</button>
+                        <span id="quantidade3">0</span>
                     </div>
                 </li>
                 <li>
@@ -405,17 +405,13 @@
             </ul>
         </div>
 
-        <!--Combos-->
-        <div class="combos">
-            <img src="Assets/Imagens/COMBO_P.png" alt="imagem do compo p">
-        </div>
 
     </main>
 
     <!--Créditos de desenvolvimento-->
     <footer>
-        <div class="finalizar">
-            <p>Total: <span>R$ 0,00</span></p>
+        <div id="finalizar" class="finalizar">
+            <p>Total: R$<span id="Total"></span></p>
             <button>Finalizar</button>
         </div>
         <h2>MAF</h2>
