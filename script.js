@@ -79,7 +79,7 @@ function fecharModal(){
 //gera a lista final
 function gerarLista(){
     if((get('nome').value!="")){
-        if(get('campoEntrega').style.display=='none' || (get('campoEntrega').style.display=='block' && get('campoEntrega').value!="")){
+        if(get('campoEntrega').style.display=='none' || ((get('campoEntrega').style.display=='block') && (get('campoEntrega').value!=""))){
             link +=get('nome').value+"%0A%0A";
             if(controle===0){
                 for(let i=1; i<=38;i++){
