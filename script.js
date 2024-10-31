@@ -43,7 +43,6 @@ function aberto(){
         return valorFinal;
     }
 
-
 //adiciona os itens
 function adicionarItem(identificador){
     let itens = parseInt(get('quantidade'+identificador).innerHTML);
@@ -82,7 +81,7 @@ function gerarLista(){
     for(let i=1; i<=38;i++){
         if(parseInt(get('quantidade'+i).innerHTML)> 0){
             listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
-            link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20("+(parseFloat(get('quantidade'+i).innerHTML)*parseFloat(get('valor'+i).innerHTML))+")%0A";
+            link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20("+(valorItem(i)*get('quantidade'+i))+")%0A";
             
         }
 
