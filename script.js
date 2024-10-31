@@ -1,7 +1,7 @@
 let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br><br>";
-let link = "https://wa.me/5516992467515/?text=Pedido%20para%20%0A"
+let link = "https://wa.me/5516992467515/?text=Pedido%20para%20"
 //coleta ids 
 function get(id){
     return document.getElementById(id);
@@ -82,12 +82,12 @@ function gerarLista(){
     for(let i=1; i<=38;i++){
         if(parseInt(get('quantidade'+i).innerHTML)> 0){
             listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
-            link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%0A";
+            link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20("+(parseFloat(get('quantidade'+i))*parseFloat(get('valor'+i)))+")%0A";
             
         }
 
     }
-    link+="%0ATotal=%20"+Total;
+    link+="%0ATotal=%20R$"+Total.toFixed(2);
     get('listaFinal').innerHTML=listaFinal;
     get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
 }
