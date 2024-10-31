@@ -93,6 +93,7 @@ function gerarLista(){
         link+="%0ATotal=%20R$"+Total.toFixed(2);
         get('listaFinal').innerHTML=listaFinal;
         get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
+        get('btnGerarLista').style.display='none';
     }
     else{
         alert("Preencha seu nome")
