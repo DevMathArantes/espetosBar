@@ -6,7 +6,7 @@
     height: 100vh;
     background-color: var(--cor4);
     opacity: 0.5;
-    
+    display: none;
 }
 #modal{
     width: 90%;
@@ -16,7 +16,7 @@
     left: 5%;
     height: 90vh;
     overflow: auto;
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 2em 1em;
     align-items: center;
