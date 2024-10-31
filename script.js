@@ -78,9 +78,9 @@ function fecharModal(){
 
 //gera a lista final
 function gerarLista(){
-    if((get('nome') != "") && (controle==0)){
-        controle++;
+    if((get('nome').value!="") && (controle==0)){
         link +=get('nome').value+"%0A%0A";
+        controle++;
         for(let i=1; i<=38;i++){
             if(parseInt(get('quantidade'+i).innerHTML)> 0){
                 listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
@@ -95,5 +95,6 @@ function gerarLista(){
     else{
         alert("Você precisa preencher seu nome.")
     }
+    
 }
 aberto();
