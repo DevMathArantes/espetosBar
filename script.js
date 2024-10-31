@@ -77,17 +77,27 @@ function fecharModal(){
 
 //gera a lista final
 function gerarLista(){
-    link +=get('nome').value+"%0A%0A";
-    for(let i=1; i<=38;i++){
-        if(parseInt(get('quantidade'+i).innerHTML)> 0){
-            listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
-            link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20(R$"+(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)+")%0A";
-            
-        }
-
+    if(get('campoEntrega').style.display=='block' && get('campoEntrega').value==""){
+        alert("preencha o seu endereço.")
     }
-    link+="%0ATotal=%20R$"+Total.toFixed(2);
-    get('listaFinal').innerHTML=listaFinal;
-    get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
+    else{
+        if(get('nome') != ""){
+            link +=get('nome').value+"%0A%0A";
+            for(let i=1; i<=38;i++){
+                if(parseInt(get('quantidade'+i).innerHTML)> 0){
+                    listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
+                    link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20(R$"+(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)+")%0A";
+                    
+                }
+            }
+            link+="%0ATotal=%20R$"+Total.toFixed(2);
+            get('listaFinal').innerHTML=listaFinal;
+            get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
+        }
+        else{
+            alert("Você precisa preencher seu nome.")
+        }
+    }
+    
 }
 aberto();
