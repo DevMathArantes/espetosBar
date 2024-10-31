@@ -420,17 +420,20 @@
             <button onclick="abrirModal()">Finalizar</button>
         </div>
         <div id="fundoModal"></div>
-        <form id="modal">
+        <div id="modal">
+            <h3>Agradecemos pela preferência</h3>
             <img onclick="fecharModal()" class="fechar" src="Assets/Icones/X.png" alt="icone fechar janela">
             <img class="logoFinal" src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
-            <input class="inputFinal" type="text" placeholder="Digite seu nome">
+            <input id="nome" class="inputFinal" type="text" placeholder="Digite seu nome">
             <div class="entrega">
                 <input type="checkbox" id="entrega">
                 <label for="entrega">Para entrega</label>
                 <input id="campoEntrega" class="inputFinal" type="text" placeholder="Digite seu endereço">
             </div>
-            <button class="enviar">Enviar pedido</button>
-        </form>
+            <button onclick="gerarLista()">Gerar Pedido</button>
+            <p id="listaFinal"></p>
+            <div id="separarEnviar"></div>
+        </div>
 
         <h2>MAF</h2>
         <p>Developed by Matheus Arantes Ferreira</p>
