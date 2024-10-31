@@ -14,8 +14,6 @@
     position: fixed;
     top: 5%;
     left: 5%;
-    height: 90vh;
-    overflow: auto;
     display: none;
     justify-content: center;
     padding: 2em 1em;
