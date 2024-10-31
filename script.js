@@ -78,7 +78,7 @@ function fecharModal(){
 
 //gera a lista final
 function gerarLista(){
-    link +=get('nome')+"%0A%0A";
+    link +=get('nome').value+"%0A%0A";
     for(let i=1; i<=38;i++){
         if(parseInt(get('quantidade'+i).innerHTML)> 0){
             listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
@@ -87,6 +87,7 @@ function gerarLista(){
         }
 
     }
+    link+="%0ATotal=%20"+Total;
     get('listaFinal').innerHTML=listaFinal;
     get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
 }
