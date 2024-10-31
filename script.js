@@ -1,7 +1,7 @@
 let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br><br>";
-let link = "https://wa.me/seu_numero/?text=Pedido%20para%20%0A"
+let link = "https://wa.me/5516992467515/?text=Pedido%20para%20%0A"
 //coleta ids 
 function get(id){
     return document.getElementById(id);

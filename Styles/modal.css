@@ -64,7 +64,7 @@
 #entrega:checked~  #campoEntrega{
     display: block;
 }
-#modal button,a{
+#modal button{
     background-color: var(--cor3);
     color: var(--cor1);
     border: 0;
@@ -86,4 +86,13 @@
     background-position: 10%;
     font-weight: 600;
     font-family: var(--fontDestaque);
+    background-color: var(--cor3);
+    padding: 1em;
+    border-radius: 10px;
+    width: 70%;
+}
+#separarEnviar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
