@@ -2,8 +2,7 @@ let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br><br>";
 let link = "https://wa.me/5516992467515/?text=Pedido%20para%20";
-let controle = 0;
-let troco = 0;
+let Troco = 0.0;
 
 //coleta ids 
 function get(id){
@@ -125,12 +124,12 @@ function troco(){
 function verificaTroco(){
     if(get('formaPagamento').value=="2"){
         if(get('troco').value<Total){
-            alert("Valor não pode ser menor que o total")
             return false;
         }
         else{
-            troco = parseInt(get('troco').value) - Total;
-            link+="%0ATroco%20para%20"+get('troco').value+"%20("+troco+"%0A";
+            troco = parseInt(get('troca').value) - Total;
+            link+="%0ATroco%20para%20"+get('troco').value+"%20-%20("+troco+")%0A";
+            listaFinal+=`<br>Troco para ${get('troco').value} - (${troco})<br>`
             return true; 
         }
     }
