@@ -1,7 +1,7 @@
 let Total = 0.0;
 let Status;
-let listaFinal = "Seu pedido: <br><br>";
-let link = "https://wa.me/5516992467515/?text=Pedido%20para%20";
+let listaFinal = "Seu pedido: <br>";
+let link = "https://wa.me/5516992467515/?text=Pedido";
 let controle = 0;
 //coleta ids 
 function get(id){
@@ -92,14 +92,14 @@ function gerarLista(){
                 listaFinal+="<br>Endereço: "+get('campoEntrega').value+"<br>";
                 link+="%0AEndereço:%20"+get('campoEntrega').value+"%0A";
             }
-            controle++;
+            listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
             link+="%0ATotal=%20R$"+Total.toFixed(2);
             get('listaFinal').innerHTML=listaFinal;
             get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
-            get('btnGerarLista').style.display='none';
+            get('infoCliente').style.display='none';
         }
         else{
-            alert("Informe o método de pagamento")
+            alert("Pagamento inválido")
         }
     }
     else{
@@ -123,14 +123,24 @@ function verificaTroco(){
         return false;
     }
     else{
-        if(get('formaPagamento').value=="2"){
+        if(get('formaPagamento').value=="2" && get('troco').value>=Total){
             let Tr = parseFloat(get('troco').value)-Total;
-            link+="%0ATroco%20para%20R$%20"+parseFloat(get('troco').value).toFixed(2)+"%20-%20R$%20("+parseFloat(Tr).toFixed(2)+")%0A";
+            link+="%0ATroco%20para%20R$%20"+parseFloat(get('troco').value).toFixed(2)+"%20-%20(%20R$%20"+parseFloat(Tr).toFixed(2)+")%0A";
             listaFinal+="<br>Troco para R$ "+parseFloat(get('troco').value).toFixed(2) +" - (R$ "+parseFloat(Tr).toFixed(2)+")<br>";
             return true;
         }
-        else{
+        if(get('formaPagamento').value=="3"){
+            link+="%0ACartão%0A"
+            listaFinal+="Cartão<br>";
             return true;
+        }
+        if(get('formaPagamento').value=="4"){
+            link+="%0APix%0A"
+            listaFinal+="Pix<br>";
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
