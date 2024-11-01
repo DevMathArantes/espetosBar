@@ -29,14 +29,14 @@ footer a img{
     width: 100%;
     display: none;
     justify-content: center;
-    padding: 1em;
+    padding: 1.5em;
     background-color: var(--cor2);
     gap: 1em;
     font-weight: 600;
 }
 .finalizar button{
-    background-color: var(--cor2);
-    border: 2px solid var(--cor3);
+    background-color: var(--cor3);
+    border: 0;
     border-radius: 10px;
     color: var(--cor1);
     font-weight: 700;

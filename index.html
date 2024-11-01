@@ -425,10 +425,17 @@
             <img onclick="fecharModal()" class="fechar" src="Assets/Icones/X.png" alt="icone fechar janela">
             <img class="logoFinal" src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
             <input id="nome" class="inputFinal" type="text" placeholder="Digite seu nome">
+            <select onchange="troco()" class="inputFinal" id="formaPagamento">
+                <option value="1">Forma de pagamento</option>
+                <option value="2">Dinheiro</option>
+                <option value="3">Cartão</option>
+                <option value="4">Pix</option>
+            </select>
+            <input id="troco" type="number" class="inputFinal ocultar" placeholder="Troco para qual valor ">
             <div class="entrega">
                 <input type="checkbox" id="entrega">
                 <label for="entrega">Para entrega</label>
-                <input id="campoEntrega" class="inputFinal" type="text" placeholder="Digite seu endereço">
+                <input id="campoEntrega" class="inputFinal " type="text" placeholder="Digite seu endereço">
             </div>
             <button id="btnGerarLista" onclick="gerarLista()">Gerar Pedido</button>
             <p id="listaFinal"></p>
