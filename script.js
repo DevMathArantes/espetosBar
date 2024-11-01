@@ -134,6 +134,9 @@ function verificaTroco(){
             return true; 
         }
     }
+    else{
+        return true;
+    }
 }
 
 aberto();
