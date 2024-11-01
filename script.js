@@ -79,7 +79,7 @@ function fecharModal(){
 //gera a lista final (após as verificações)
 function gerarLista(){
     if((get('nome').value!="")){
-        if(get('formaPagamento').value!=1){
+        if(get('formaPagamento').value!=1 && verificaTroco()){
             link +=get('nome').value+"%0A%0A";
             for(let i=1; i<=38;i++){
                 if(parseInt(get('quantidade'+i).innerHTML)> 0){
@@ -118,5 +118,21 @@ function troco(){
 }
 
 //Verifica o valor do troco
+function verificaTroco(){
+    if(get('formaPagamento').value=="1"){
+        return false;
+    }
+    else{
+        if(get('formaPagamento').value=="2"){
+            let Tr = parseFloat(get('troco').value)-Total;
+            link+="%0ATroco%20para%20R$%20"+parseFloat(get('troco').value).toFixed(2)+"%20-%20R$%20("+parseFloat(Tr).toFixed(2)+")%0A";
+            listaFinal+="<br>Troco para R$ "+parseFloat(get('troco').value).toFixed(2) +" - (R$ "+parseFloat(Tr).toFixed(2)+")<br>";
+            return true;
+        }
+        else{
+            return true;
+        }
+    }
+}
 
 aberto();
