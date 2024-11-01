@@ -2,8 +2,7 @@ let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br><br>";
 let link = "https://wa.me/5516992467515/?text=Pedido%20para%20";
-let Troco = 0.0;
-
+let controle = 0;
 //coleta ids 
 function get(id){
     return document.getElementById(id);
@@ -81,25 +80,23 @@ function fecharModal(){
 function gerarLista(){
     if((get('nome').value!="")){
         if(get('formaPagamento').value!=1){
-            if(verificaTroco()){
-                link +=get('nome').value+"%0A%0A";
-                for(let i=1; i<=38;i++){
-                    if(parseInt(get('quantidade'+i).innerHTML)> 0){
-                        listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
-                        link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20(R$"+(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)+")%0A";
-                            
-                    }
+            link +=get('nome').value+"%0A%0A";
+            for(let i=1; i<=38;i++){
+                if(parseInt(get('quantidade'+i).innerHTML)> 0){
+                    listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
+                    link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20(R$"+(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)+")%0A";
+                        
                 }
-                if(get('campoEntrega').value != ""){
-                    listaFinal+="<br>Endereço: "+get('campoEntrega').value+"<br>";
-                    link+="%0AEndereço:%20"+get('campoEntrega').value+"%0A";
-                }
-                controle++;
-                link+="%0ATotal=%20R$"+Total.toFixed(2);
-                get('listaFinal').innerHTML=listaFinal;
-                get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
-                get('btnGerarLista').style.display='none';
             }
+            if(get('campoEntrega').value != ""){
+                listaFinal+="<br>Endereço: "+get('campoEntrega').value+"<br>";
+                link+="%0AEndereço:%20"+get('campoEntrega').value+"%0A";
+            }
+            controle++;
+            link+="%0ATotal=%20R$"+Total.toFixed(2);
+            get('listaFinal').innerHTML=listaFinal;
+            get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
+            get('btnGerarLista').style.display='none';
         }
         else{
             alert("Informe o método de pagamento")
@@ -121,21 +118,5 @@ function troco(){
 }
 
 //Verifica o valor do troco
-function verificaTroco(){
-    if(get('formaPagamento').value=="2"){
-        if(get('troco').value<Total){
-            return false;
-        }
-        else{
-            troco = parseInt(get('troca').value) - Total;
-            link+="%0ATroco%20para%20"+get('troco').value+"%20-%20("+troco+")%0A";
-            listaFinal+=`<br>Troco para ${get('troco').value} - (${troco})<br>`
-            return true; 
-        }
-    }
-    else{
-        return true;
-    }
-}
 
 aberto();
