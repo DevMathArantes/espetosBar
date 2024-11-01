@@ -89,6 +89,10 @@ function gerarLista(){
                 }
             }
         }
+        if(get('campoEntrega').value != ""){
+            listaFinal+="<br>Endereço: "+get('campoEntrega').value+"<br>";
+            link+="%0AEndereço:%20"+get('campoEntrega').value+"%0A";
+        }
         controle++;
         link+="%0ATotal=%20R$"+Total.toFixed(2);
         get('listaFinal').innerHTML=listaFinal;
