@@ -1,0 +1,90 @@
+.especiais{
+    background-color: var(--cor2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    margin-bottom: 0;
+}
+.swiper{
+    margin: 0;
+    width: 100%;
+    color: var(--cor1);
+    height: auto;
+}
+.swiper-slide img{
+    height: 40vh;
+    width: 80%;
+}
+.especiais h2{
+    color: var(--cor1);
+    font-weight: 400;
+    text-align: center;
+    padding: 1em 2em;
+}
+.especiais h2 img{
+    width: 25%;
+}
+.chopps{
+    
+}
+.combos{
+    display: flex;
+    color: var(--cor1);
+}
+.combos p{
+    width: 20%;
+    align-items: center;
+    height: 40vh;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: var(--fontVertical);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+}
+.swiperMenu{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.swiper-slide{
+    display: flex;
+}
+.swiper-slide p{
+    display: flex;
+}
+.swiper-slide p span{
+    padding: 0.5em;
+    border: 3px solid var(--cor3);
+    width: 45%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.mais{
+    background-color: var(--cor3);
+    border-radius: 10px 0 0 10px;
+}
+.menos{
+    border-radius: 0 10px 10px 0;
+}
+.especiaisMenu {
+    justify-content: end;
+    flex-flow: row wrap;
+}
+.especiaisMenu i{
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.quantidadeCombos{
+    background-image: url(../Assets/Icones/churrasqueira.png);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position: 75%;
+}
