@@ -8,9 +8,6 @@
     <!--Estilos Css-->
     <link rel="stylesheet" href="styles.css">
 
-    <!--Link do plugin para carrossel-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
 </head>
 <body>
 
@@ -20,8 +17,6 @@
         <img src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
         <p>
             Horário de funcionamento: 18h:00 ás 23h:00 
-            <br><br>
-            entrega a partir das 19h:00
             <br><br>
             Rua Capitão Scandiuzzi, Nº 861 / Aramina - Centro
         </p>
@@ -422,105 +417,52 @@
             </ul>
         </div>
 
-         <!--Combos && chopps-->
+         <!--Combos & Chopps-->
          <section class="especiais">
 
             <!--Combos-->
-            <h2>Confira nossos combos</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-
-                        <div class="combos">
-                            <p>
-                                C <br>
-                                O <br>
-                                M <br>
-                                B <br>
-                                O <br>
-                                <br>
-                                P
-                            </p>
-                            <img src="Assets/Imagens/COMBO_P.png" alt="imagem do combo P">
-                        </div>
-                        <p class="especiaisMenu">
-                            <span class="mais">+ MAIS</span>
-                            <span class="menos">- MENOS</span>
-                            <i class="quantidadeCombos">0</i>
-                        </p>
+            <h2>CONFIRA NOSSOS COMBOS</h2>
+            <div class="especial">
+                <div class="combos">
+                    <div class="combo">
+                        <h3>
+                            C <br>
+                            O <br>
+                            M <br>
+                            B <br>
+                            O <br>
+                            <br>
+                            P
+                        </h3>
+                        <img src="Assets/Imagens/COMBO_P.png" alt="imagem combo p">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="combos">
-                            <p>
-                                C <br>
-                                O <br>
-                                M <br>
-                                B <br>
-                                O <br>
-                                <br>
-                                M
-                            </p>
-                            <img src="Assets/Imagens/COMBO_P.png" alt="imagem do combo P">
-                        </div>
-                        <p class="especiaisMenu">
-                            <span class="mais">+ MAIS</span>
-                            <span class="menos">- MENOS</span>
-                            <i class="quantidadeCombos">0</i>
-                        </p>
+                    <div class="combo">
+                        <h3>
+                            C <br>
+                            O <br>
+                            M <br>
+                            B <br>
+                            O <br>
+                            <br>
+                            M
+                        </h3>
+                        <img src="Assets/Imagens/COMBO_M.png" alt="imagem combo m">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="combos">
-                            <p>
-                                C <br>
-                                O <br>
-                                M <br>
-                                B <br>
-                                O <br>
-                                <br>
-                                G
-                            </p>
-                            <img src="Assets/Imagens/COMBO_P.png" alt="imagem do combo P">
-                        </div>
-                        <p class="especiaisMenu">
-                            <span class="mais">+ MAIS</span>
-                            <span class="menos">- MENOS</span>
-                            <i class="quantidadeCombos">0</i>
-                        </p>
+                    <div class="combo">
+                        <h3>
+                            C <br>
+                            O <br>
+                            M <br>
+                            B <br>
+                            O <br>
+                            <br>
+                            G
+                        </h3>
+                        <img src="Assets/Imagens/COMBO_G.png" alt="imagem combo g">
                     </div>
                 </div>
             </div>
-
-            <!--Chopps-->
-            <h2>Não pode faltar Chopps</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="chopps">
-                            <img src="Assets/Imagens/chopp1.jpg" alt="imagem de chopp">
-                            
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="chopps">
-                            <img src="Assets/Imagens/chopp2.jpg" alt="imagem de chopp">
-                        </div>
-                    </div>
-                    <div class="chopps swiper-slide">
-                        <div class="chopps">
-                            <img src="Assets/Imagens/chopp3.jpg" alt="imagem de chopp">
-                        </div>
-                    </div>
-                    <div class="chopps swiper-slide">
-                        <div class="chopps">
-                            <img src="Assets/Imagens/vinhoLata.jpg" alt="imagem de vinho lata">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+         </section>
     </main>
 
     <!--Créditos de desenvolvimento-->
@@ -544,6 +486,7 @@
                     <option value="4">Pix</option>
                 </select>
                 <input id="troco" type="number" class="inputFinal ocultar" placeholder="Troco para qual valor ">
+                <p>entrega a partir das 19h:00</p>
                 <div class="entrega">
                     <input type="checkbox" id="entrega">
                     <label for="entrega">Para entrega</label>
@@ -566,21 +509,5 @@
      <!--Script da página-->
     <script src="script.js"></script>
 
-    <script>
-        //Função do carrossel
-        const swiper = new Swiper('.swiper', {
-
-        //Espaço entre os slides
-        spaceBetween: 10,
-
-        //Slides por view
-        slidesPerView: 1.6,
-
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-        });
-    </script>
 </body>
 </html>

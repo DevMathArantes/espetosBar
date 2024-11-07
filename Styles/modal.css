@@ -9,21 +9,18 @@
     display: none;
 }
 #modal{
-    width: 90%;
+    width: 100%;
     background-color: var(--cor2);
     position: fixed;
-    top: 5%;
-    left: 5%;
+    top: 0;
+    left: 0;
     display: none;
-    justify-content: center;
-    padding: 5em 1em;
+    padding: 1em;
     align-items: center;
-    border-radius: 20px;
     overflow: auto;
     flex-direction: column;
     gap: 1em;
-    height: 90vh;
-    box-shadow: 0px 0px 10px var(--cor2);
+    height: 100vh;
 }
 .logoFinal{
     width: 60%;
