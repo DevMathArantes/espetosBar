@@ -22,14 +22,17 @@
     width: 33%;
     display: flex;
     flex-flow: row wrap;
+    padding-left: 0.5em;
+}
+.comboInfo{
+    width: 95%;
 }
 .combo h3{
-    width: 25%;
+    width: 100%;
     text-align: center;
     font-size: 1.5rem;
     font-family: var(--fontVertical);
 }
 .combo img{
-    width: 75%;
-    height: 45vh;
+    width: 95%;
 }
