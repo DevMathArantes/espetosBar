@@ -42,3 +42,21 @@
     border-radius: 5px;
     color: var(--cor1);
 }
+.comboInfoFinal{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    padding: 0 1em;
+}
+.comboInfoFinal button{
+    width: 50%;
+}
+.comboInfoFinal span{
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.comboInfoFinal span del{
+    color: var(--cor3);
+    font-size: 1.2rem;
+}
