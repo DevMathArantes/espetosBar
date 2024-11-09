@@ -16,6 +16,7 @@
 .combos{
     display: flex;
     width: 220%;
+    margin-left: 7%;
 }
 .combo{
     width: 33%;
@@ -29,10 +30,10 @@
 }
 .comboInfo p{
     font-family: var(--fontDestaque);
-    font-size: 0.7rem;
 }
 .combo img{
-    width: 100%;
+    width: 95%;
+    border-radius: 20px;
 }
 .comboInfo button{
     background-color: var(--cor3);
