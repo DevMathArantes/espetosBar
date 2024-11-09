@@ -6,7 +6,7 @@ main{
     align-items: center;
 }
 .imagemCircular{
-    width: 75%;
+    width: 95%;
     border: 2px solid var(--cor2);
     border-radius: 20px;
 }
