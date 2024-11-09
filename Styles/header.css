@@ -1,6 +1,5 @@
 header{
     padding: 5em 2em 2em 2em;
-    background-color: var(--cor2);
     margin-bottom: 3em;
     display: flex;
     flex-direction: column;

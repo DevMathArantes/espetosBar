@@ -36,9 +36,7 @@
 }
 body{
     margin: 0;
-    background-color: var(--cor4);
-    background-image: url(Assets/Icones/espeto.png);
-    background-size: 10%;
+    background-color: var(--cor2);
 }
 a{
     text-decoration: none;
