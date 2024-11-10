@@ -26,6 +26,9 @@
     align-items: end;
     padding-right: 1em;
 }
+.combo h3{
+    width: 100%;
+}
 .combo p{
     line-height: 1.5em;
     font-family: var(--fontDestaque);

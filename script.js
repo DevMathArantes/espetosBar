@@ -8,7 +8,6 @@ function get(id){
     return document.getElementById(id);
 }
 
-
 //atualiza o Status de 1 para aberto e 0 para fechado 
 function aberto(){
     const agora = new Date();
