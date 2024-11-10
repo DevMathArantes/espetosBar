@@ -22,23 +22,35 @@
     width: 33%;
     display: flex;
     flex-flow: row wrap;
-    align-items: start;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 1em;
 }
-.comboInfo{
-    width: 90%;
-    padding: 1em;
-}
-.comboInfo p{
+.combo p{
+    line-height: 1.5em;
     font-family: var(--fontDestaque);
+}
+.combo button{
+    width: 40%;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border: 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.combo span{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.combo span del{
+    color: var(--cor3);
+    font-size: 1.2rem;
 }
 .combo img{
     width: 95%;
     border-radius: 20px;
-}
-.comboInfo button{
-    background-color: var(--cor3);
-    border: 0;
-    padding: 1em;
-    border-radius: 5px;
-    color: var(--cor1);
 }
