@@ -33,14 +33,23 @@
     line-height: 1.5em;
     font-family: var(--fontDestaque);
 }
-.combo button{
-    width: 40%;
+.combo button, .combo a{
+    width: 80%;
+    margin: 1em 0;
     background-color: var(--cor3);
     color: var(--cor1);
     border: 0;
     padding: 0.5em;
     border-radius: 5px;
     font-weight: 600;
+}
+.combo a{
+    text-align: center;
+    background-image: url(../Assets/Icones/whatsapp.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15%;
+    font-size: 0.8rem;
 }
 .combo span{
     display: flex;

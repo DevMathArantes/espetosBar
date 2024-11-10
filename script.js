@@ -144,5 +144,16 @@ function verificaTroco(){
     }
 }
 
+function pedirCombo(identificador){
+    let nome = prompt("Digite o seu nome: ");
+    if(nome===""){
+        alert("Preencha o campo com seu nome.")
+    }
+    else{
+        get('combo'+identificador).innerHTML+=`<a href="">Enviar pedido</a>`;
+        get('gerar'+identificador).style.display="none";
+    }
+}
+
 aberto();
 
