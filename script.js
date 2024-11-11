@@ -8,6 +8,7 @@ let quant1;
 let quant2;
 let quant3;
 let quant4;
+let quant5;
 let Combo;
 let tipoCombo;
 
@@ -166,6 +167,7 @@ function pedirCombo(identificador){
                 quant2 = 1;
                 quant3 = "1/2";
                 quant4 = 1;
+                quant5 = "36.90"
                 break;
             case 'combo2':
                 tipoCombo = "M"
@@ -173,6 +175,7 @@ function pedirCombo(identificador){
                 quant2 = 2;
                 quant3 = "1/2";
                 quant4 = 2;
+                quant5 = "68.90"
                 break;
             case 'combo3':
                 tipoCombo = "G"
@@ -180,9 +183,10 @@ function pedirCombo(identificador){
                 quant2 = 4;
                 quant3 = 1;
                 quant4 = 3;
+                quant5 = "109.90"
                 break;
         }
-        linkCombo+=tipoCombo+"%20para%20"+nome+"%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)";
+        linkCombo+="%20"+tipoCombo+"%20para%20"+nome+"%0A%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)%0A%0ATotal:%20R$%20"+quant5;
         get('combo'+identificador).innerHTML+=`<a href="${linkCombo}">Enviar pedido</a>`;
         get('gerar'+identificador).style.display="none";
     }
