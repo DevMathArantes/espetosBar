@@ -3,6 +3,8 @@ let Status;
 let listaFinal = "Seu pedido: <br>";
 let link = "https://wa.me/5516992467515/?text=Pedido";
 let controle = 0;
+let linkCombo = "https://wa.me/5516992467515/?text=Combo"
+
 //coleta ids 
 function get(id){
     return document.getElementById(id);
@@ -150,7 +152,33 @@ function pedirCombo(identificador){
         alert("Preencha o campo com seu nome.")
     }
     else{
-        get('combo'+identificador).innerHTML+=`<a href="">Enviar pedido</a>`;
+        let combo = 'combo'+identificador;
+        let quant1;
+        let quant2;
+        let quant3;
+        let quant4;
+        switch(combo){
+            case 'combo1':
+                quant1 = 2;
+                quant2 = 1;
+                quant3 = "1/2";
+                quant4 = 1;
+                break;
+            case 'combo2':
+                quant1 = 4;
+                quant2 = 2;
+                quant3 = "1/2";
+                quant4 = 2;
+                break;
+            case 'combo3':
+                quant1 = 6;
+                quant2 = 4;
+                quant3 = 1;
+                quant4 = 3;
+                break;
+        }
+        linkCombo+=tipoCombo+"%20para%20"+nome+"%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)";
+        get('combo'+identificador).innerHTML+=`<a href="${linkCombo}">Enviar pedido</a>`;
         get('gerar'+identificador).style.display="none";
     }
 }
