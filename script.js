@@ -3,7 +3,13 @@ let Status;
 let listaFinal = "Seu pedido: <br>";
 let link = "https://wa.me/5516992467515/?text=Pedido";
 let controle = 0;
-let linkCombo = "https://wa.me/5516992467515/?text=Combo"
+let linkCombo = "https://wa.me/5516992467515/?text=Combo";
+let quant1;
+let quant2;
+let quant3;
+let quant4;
+let Combo;
+let tipoCombo;
 
 //coleta ids 
 function get(id){
@@ -152,25 +158,24 @@ function pedirCombo(identificador){
         alert("Preencha o campo com seu nome.")
     }
     else{
-        let combo = 'combo'+identificador;
-        let quant1;
-        let quant2;
-        let quant3;
-        let quant4;
-        switch(combo){
+        Combo = 'combo'+identificador;
+        switch( Combo){
             case 'combo1':
+                tipoCombo = "P";
                 quant1 = 2;
                 quant2 = 1;
                 quant3 = "1/2";
                 quant4 = 1;
                 break;
             case 'combo2':
+                tipoCombo = "M"
                 quant1 = 4;
                 quant2 = 2;
                 quant3 = "1/2";
                 quant4 = 2;
                 break;
             case 'combo3':
+                tipoCombo = "G"
                 quant1 = 6;
                 quant2 = 4;
                 quant3 = 1;
