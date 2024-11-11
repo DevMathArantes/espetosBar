@@ -9,8 +9,11 @@ let quant2;
 let quant3;
 let quant4;
 let quant5;
-let Combo;
+let Combo = 0;
 let tipoCombo;
+let totalChopp;
+let nomeChopp;
+let linkChopp ="https://wa.me/5516992467515/?text=";
 
 //coleta ids 
 function get(id){
@@ -153,6 +156,7 @@ function verificaTroco(){
     }
 }
 
+//Gera o link para pedir combos
 function pedirCombo(identificador){
     let nome = prompt("Digite o seu nome: ");
     if(nome===""){
@@ -189,6 +193,41 @@ function pedirCombo(identificador){
         linkCombo+="%20"+tipoCombo+"%20para%20"+nome+"%0A%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)%0A%0ATotal:%20R$%20"+quant5;
         get('combo'+identificador).innerHTML+=`<a href="${linkCombo}">Enviar pedido</a>`;
         get('gerar'+identificador).style.display="none";
+    }
+}
+
+//Adiciona chopps
+function addChopp(identificador){
+    let quantChopp = get('quantChopp'+identificador).innerHTML
+    quantChopp++;
+    quantChopp.toString();
+    get('quantChopp'+identificador).innerHTML=quantChopp;
+}
+
+//Retira chopps
+function retChopp(identificador){
+    if(quantChopp!=0){
+        let quantChopp = get('quantChopp'+identificador).innerHTML
+        quantChopp--;
+        quantChopp.toString();
+        get('quantChopp'+identificador).innerHTML=quantChopp;
+    }
+}
+
+//gerar pedido de chopp
+function gerarChopp(identificador){
+    if(get('quantChopp'+identificador).innerHTML!=0){
+        let nome = prompt("Digite o seu nome: ");
+        if(nome===""){
+            alert("Preencha o campo com seu nome.")
+        }
+        else{
+            totalChopp= valorItem(identificador)*parseInt(get('quantChopp'+identificador).innerHTML);
+            nomeChopp= get('chopp'+identificador).innerHTML;
+            linkChopp+= get('quantChopp'+identificador)+"%20"+nomeChopp+"%20(s)%20para"+nome;
+            get('gerarChopp'+identificador).style.display="none";
+            get('divChopp'+identificador).innerHTML+=`<a class='gerarPedido' href="${linkChopp}">Pedir</a>`;
+        }
     }
 }
 

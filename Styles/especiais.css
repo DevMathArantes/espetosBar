@@ -44,6 +44,7 @@
     padding: 0.5em;
     border-radius: 5px;
     font-weight: 600;
+    text-align: center;
 }
 .combo a{
     text-align: center;
@@ -84,6 +85,11 @@
     width: 100%;
     text-align: center;
     
+}
+.chopp i{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--fontAlta);
 }
 .selecionarChopp{
     color: var(--cor1);
