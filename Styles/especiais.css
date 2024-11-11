@@ -13,10 +13,12 @@
     text-align: center;
     padding: 0 1em;
 }
-.combos{
+.chopps, .combos{
     display: flex;
-    width: 220%;
-    margin-left: 7%;
+    margin-left: 5%;
+}
+.combos{
+    width: 225%;
 }
 .combo{
     width: 33%;
@@ -33,7 +35,7 @@
     line-height: 1.5em;
     font-family: var(--fontDestaque);
 }
-.combo button, .combo a{
+.gerarPedido, .combo a{
     width: 80%;
     margin: 1em 0;
     background-color: var(--cor3);
@@ -65,4 +67,32 @@
 .combo img{
     width: 95%;
     border-radius: 20px;
+}
+.chopps{
+    width: 300%;
+}
+.chopp{
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.chopp img{
+    width: 90%;
+}
+.chopp h3{
+    width: 100%;
+    text-align: center;
+    
+}
+.selecionarChopp{
+    color: var(--cor1);
+    width: 40%;
+    padding: 0.5em;
+    border: 1px solid var(--cor1);
+    margin: 1em 0;
+}
+.chopps p{
+    width: 100%;
+    text-align: center;
 }

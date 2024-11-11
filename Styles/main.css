@@ -87,11 +87,11 @@ main ul li span{
     padding: 1em;
     width: 33%;
 }
-.soma{
+.subtrai{
     border-radius: 10px 0 0 10px;
     background-color: var(--cor2);
 }
-.subtrai{
+.soma{
     border-radius: 0 10px 10px 0;
     background-color: var(--cor3);
 }
