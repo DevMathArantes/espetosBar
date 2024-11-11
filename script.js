@@ -224,7 +224,7 @@ function gerarChopp(identificador){
         else{
             totalChopp= valorItem(identificador)*parseInt(get('quantChopp'+identificador).innerHTML);
             nomeChopp= get('chopp'+identificador).innerHTML;
-            linkChopp+= get('quantChopp'+identificador)+"%20"+nomeChopp+"%20(s)%20para"+nome;
+            linkChopp+= get('quantChopp'+identificador).innerHTML+"%20"+nomeChopp+"%20(s)%20para%20"+nome;
             get('gerarChopp'+identificador).style.display="none";
             get('divChopp'+identificador).innerHTML+=`<a class='gerarPedido' href="${linkChopp}">Pedir</a>`;
         }
