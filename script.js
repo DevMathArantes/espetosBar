@@ -206,8 +206,8 @@ function addChopp(identificador){
 
 //Retira chopps
 function retChopp(identificador){
+    let quantChopp = get('quantChopp'+identificador).innerHTML;
     if(quantChopp!=0){
-        let quantChopp = get('quantChopp'+identificador).innerHTML
         quantChopp--;
         quantChopp.toString();
         get('quantChopp'+identificador).innerHTML=quantChopp;

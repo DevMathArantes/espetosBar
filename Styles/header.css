@@ -1,31 +1,51 @@
 header{
     padding: 5em 2em 2em 2em;
-    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--cor1);
+    text-align: center;
+    background-image: url(../Assets/Imagens/espetosBar.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    height: 180vw;
+}
+header h1{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.headerInfo{
+    font-family: var(--fontDestaque);
+    font-weight: 550;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    align-items: center;
-    color: var(--cor1);
-    text-align: center;
-    border-bottom: 2px solid var(--cor3);
 }
-header h1{
-    margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
-}
-header img{
-    width: 100%;
-}
-header p{
-    font-family: var(--fontDestaque);
-    font-weight: 550;
+header span{
+    text-align: left;
+    font-size: 0.6rem;
+    padding: 0.5em 3em;
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
 header h2{
     background-image: url(../Assets/Icones/baixo.png);
-    background-size: 10%;
+    background-size: 7%;
     background-repeat: no-repeat;
     width: 100%;
+    padding: 1em;
     background-position: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+.local{
+    background-image: url(../Assets/Icones/local.png);
+}
+.relogio{
+    background-image: url(../Assets/Icones/relogio.png);
+}
+
+@media screen and (min-width: 724px){
+
 }
