@@ -8,8 +8,8 @@ header{
     background-image: url(../Assets/Imagens/espetosBar.jpg);
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center 40%;
-    height: 180vw;
+    background-position: center 35%;
+    height: 170vw;
 }
 header h1{
     text-align: center;
@@ -24,11 +24,12 @@ header h1{
 }
 header span{
     text-align: left;
-    font-size: 0.6rem;
-    padding: 0.5em 3em;
-    background-size: 7%;
+    font-size: 0.7rem;
+    padding: 1em 3em;
+    background-size: 5%;
     background-repeat: no-repeat;
     background-position: 0%;
+    width: 100%;
 }
 header h2{
     background-image: url(../Assets/Icones/baixo.png);
@@ -36,8 +37,9 @@ header h2{
     background-repeat: no-repeat;
     width: 100%;
     padding: 1em;
-    background-position: 100%;
+    background-position: 10%;
     font-size: 1rem;
+    margin: 0;
 }
 .local{
     background-image: url(../Assets/Icones/local.png);
@@ -47,5 +49,24 @@ header h2{
 }
 
 @media screen and (min-width: 724px){
-
+    header{
+        height: 50vw;
+        align-items: end;
+        background-size: 30%;
+        background-position: 20% 65%;
+        justify-content: center;
+        gap: 1em;
+        text-align: left;
+    }
+    header h1{
+        width: 50%;
+        text-align: left;
+    }
+    .headerInfo{
+        width: 50%;
+    }
+    header h2{
+        background-position: 0%;
+        padding: 5vw;
+    }
 }
