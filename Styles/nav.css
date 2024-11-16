@@ -26,6 +26,7 @@ nav span{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 25%;
 }
 .redes a img{
     width: 100%;

@@ -23,6 +23,7 @@
 }
 #fechar{
     width: 5%;
+    height: 3vh;
     margin-left: auto;
 }
 .modal input, .modal select{
