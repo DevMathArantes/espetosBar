@@ -1,18 +1,10 @@
-.especiais{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 2em 0;
-    justify-content: center;
-    color: var(--cor1);
-}
+
 .especial{
     overflow: auto;
+    padding: 2em 0;
+    color: var(--cor1);
 }
-.especiais h2{
-    text-align: center;
-    padding: 0 1em;
-}
+
 .chopps, .combos{
     display: flex;
     margin-left: 5%;
@@ -23,10 +15,9 @@
 .combo{
     width: 33%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: end;
+    flex-direction: column;
     padding-right: 1em;
+    gap: 1em;
 }
 .combo h3{
     width: 100%;
@@ -35,31 +26,7 @@
     line-height: 1.5em;
     font-family: var(--fontDestaque);
 }
-.chopps a{
-    background-image: url(../Assets/Icones/whatsapp.png);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: 25%;
-}
-.gerarPedido, .combo a{
-    width: 80%;
-    margin: 1em 0;
-    background-color: var(--cor3);
-    color: var(--cor1);
-    border: 0;
-    padding: 1em 0.5em;
-    border-radius: 5px;
-    font-weight: 600;
-    text-align: center;
-}
-.combo a{
-    text-align: center;
-    background-image: url(../Assets/Icones/whatsapp.png);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: 15%;
-    font-size: 0.8rem;
-}
+
 .combo span{
     display: flex;
     flex-direction: column;

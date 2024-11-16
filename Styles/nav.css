@@ -22,7 +22,10 @@ nav span{
     gap: 2em;
 }
 .redes a{
-    width: 25%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .redes a img{
     width: 100%;
@@ -48,10 +51,27 @@ nav span{
         width: 15%;
     }
     .redes a{
-        display: flex;
-        width: 50%;
-        align-items: center;
-        justify-content: center;
         gap: 0.5em;
+    }
+}
+@media screen and (min-width: 1300px){
+    .redes a img{
+        width: 10%;
+    }
+    .redes a{
+        width: 40%;
+    }
+    .redes a span{
+        font-size: 1rem;
+    }
+    .redes a:hover{
+        transition: 1s;
+        text-decoration: underline var(--cor3);
+    }
+    .redes{
+        width: 50%;
+    }
+    .nav{
+        padding: 2em;
     }
 }

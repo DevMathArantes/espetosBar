@@ -70,3 +70,16 @@ header h2{
         padding: 5vw;
     }
 }
+@media screen and (min-width: 1300px){
+    header{
+        height: auto;
+        background-size: 20%;
+    }
+    .headerInfo span{
+        background-size: 3%;
+    }
+    .headerInfo h2{
+        background-size: 3%;
+        background-position: 5%;
+    }
+}

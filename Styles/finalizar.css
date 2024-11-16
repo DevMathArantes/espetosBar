@@ -1,0 +1,24 @@
+.finalizar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    justify-content: end;
+    padding: 1.5em;
+    background-color: var(--cor2);
+    gap: 1em;
+    font-weight: 600;
+    color: var(--cor1);
+    background-image: url(../Assets/Icones/carrinho.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20%;
+}
+.finalizar button{
+    background-color: var(--cor3);
+    border: 0;
+    border-radius: 10px;
+    color: var(--cor1);
+    font-weight: 700;
+}

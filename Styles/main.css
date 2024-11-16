@@ -1,109 +1,12 @@
 main{
     display: flex;
     flex-direction: column;
-    gap: 2em;
     width: 100%;
     align-items: center;
 }
-.imagemCircular{
-    width: 95%;
-    border: 2px solid var(--cor2);
-    border-radius: 20px;
-}
-main label{
-    display: flex;
-    background-color: var(--cor2);
+main h2{
     color: var(--cor1);
-    justify-content: center;
-    padding: 1.2em 0.7em;
-    border-radius: 10px;
-    font-family: var(--fontPadrao);
-    background-image: url('../Assets/Icones/setaDireita.png');
-    background-size: 5%;
-    background-repeat: no-repeat;
-    background-position: 80%;
-    border: 2px solid var(--cor5);
-}
-.listaEscondida{
-    display: none;
-}
-.botaoEscondido:checked~.listaEscondida{
-    display: flex;
-}
-.botaoEscondido:checked~label{
-    border-radius: 10px 10px 0 0;
-    background-image: url('../Assets/Icones/setaBaixo.png');
-}
-main ul{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    font-family: var(--fontPadrao);
-    gap: 0.5em;
-    border-radius: 0 0 10px 10px;
-    background-color: var(--cor1);
-    box-shadow: 0px 0px 20px var(--cor2);
-}
-main ul li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    flex-flow: row wrap;
-}
-main ul p{
-    width: 65%;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-main ul li span{
-    color: var(--cor3);
-    font-weight: 700;
-    width: 30%;
-}
-.cardapio{
-    width: 90%;
-}
-.selecionar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.selecionar span{
-    width: 33%;
-    background-size: 25%;
-    background-position: center right;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.selecionar button{
-    font-size: 0.7rem;
-    font-weight: 600;
-    border: 0;
-    color: var(--cor1);
-    padding: 1em;
-    width: 33%;
-}
-.subtrai{
-    border-radius: 10px 0 0 10px;
-    background-color: var(--cor2);
-}
-.soma{
-    border-radius: 0 10px 10px 0;
-    background-color: var(--cor3);
-}
-.espeto{
-    background-image: url(../Assets/Icones/espetoVermelho.png);
-}
-.gourmet{
-    background-image: url(../Assets/Icones/gourmets.png);
-}
-.bebida{
-    background-image: url(../Assets/Icones/bebida.png);
-}
-.cerveja{
-    background-image: url(../Assets/Icones/cerveja.png);
+    margin: 1em 0;
+    text-align: center;
+    padding: 0 1em;
 }

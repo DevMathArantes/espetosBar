@@ -45,515 +45,423 @@
     <main>
 
         <!--Espetos-->
-        <img class="imagemCircular" src="Assets/Imagens/espetos.jpg" alt="imagem de espetos">
-        <div class="cardapio">
-            <input class="ocultar botaoEscondido" type="checkbox" id="Espetos">
-            <label for="Espetos">Ver Espetos</label>
-            <ul class="listaEscondida">
-                <li>
-                    <p id="produto1">bovino</p> 
-                    <span id="valor1">R$ 7.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('1')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('1')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade1">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto2">coração</p> 
-                    <span id="valor2">R$ 6.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('2')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('2')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade2">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto3">queijo coalho</p> 
-                    <span id="valor3">R$ 7.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('3')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('3')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade3">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto4">queijo bolinha</p> 
-                    <span id="valor4">R$ 7.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('4')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('4')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade4">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto5">queijo bolinha defumado</p> 
-                    <span id="valor5">R$ 7.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('5')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('5')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade5">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto6">kafta bovina</p> 
-                    <span id="valor6">R$ 6.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('6')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('6')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade6">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto7">kafta de frango</p> 
-                    <span id="valor7">R$ 6.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('7')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('7')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade7">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto8">kafta recheada</p> 
-                    <span id="valor8">R$ 8.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('8')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('8')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade8">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto9">linguiça suína</p> 
-                    <span id="valor9">R$ 6.00</span>
-                    <div class="selecionar">
-                            <button onclick="retirarItem('9')" class="subtrai">- MENOS</button>
-                            <button onclick="adicionarItem('9')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade9">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto10">linguiça apimentada</p> 
-                    <span id="valor10">R$ 6.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('10')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('10')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade10">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto11">linguiça toscana</p> 
-                    <span id="valor11">R$ 6.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('11')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('11')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade11">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto12">pão de alho</p> 
-                    <span id="valor12">R$ 6.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('12')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('12')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade12">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto13">medalhão de frango</p> 
-                    <span id="valor13">R$ 7.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('13')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('13')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade13">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto14">medalhão de mussarela</p> 
-                    <span id="valor14">R$ 7.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('14')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('14')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade14">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto15">medalhão romeu e julieta</p> 
-                    <span id="valor15">R$ 8.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('15')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('15')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade15">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto16">medalhão mandioca</p> 
-                    <span id="valor16">R$ 8.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('16')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('16')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade16">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto17">panceta</p> 
-                    <span id="valor17">R$ 6.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('17')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('17')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade17">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto18">tabua de mandioca e tomate (inteira)</p>
-                    <span id="valor18">R$ 8.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('18')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('18')" class="soma">+ MAIS</button>
-                        <span class="espeto" id="quantidade18">0</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <img class="imagemCardapio" src="Assets/Imagens/espetos.jpg" alt="imagem de espetos">
+        <input class="ocultar botaoEscondido" type="checkbox" id="Espetos">
+        <label class="abrirLista" for="Espetos">Ver Espetos</label>
+        <ul class="listaEscondida">
+            <li>
+                <p id="produto1">bovino</p> 
+                <span id="valor1">R$ 7.00</span>
+                <button onclick="retirarItem('1')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('1')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade1">0</span>
+                    
+            </li>
+            <li>
+                <p id="produto2">coração</p> 
+                <span id="valor2">R$ 6.00</span>
+                <button onclick="retirarItem('2')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('2')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade2">0</span>
+            </li>
+            <li>
+                <p id="produto3">queijo coalho</p> 
+                <span id="valor3">R$ 7.00</span>
+                <button onclick="retirarItem('3')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('3')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade3">0</span>
+            </li>
+            <li>
+                <p id="produto4">queijo bolinha</p> 
+                <span id="valor4">R$ 7.00</span>
+                <button onclick="retirarItem('4')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('4')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade4">0</span>
+            </li>
+            <li>
+                <p id="produto5">queijo bolinha defumado</p> 
+                <span id="valor5">R$ 7.00</span>
+                <button onclick="retirarItem('5')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('5')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade5">0</span>
+            </li>
+            <li>
+                <p id="produto6">kafta bovina</p> 
+                <span id="valor6">R$ 6.00</span>
+                <button onclick="retirarItem('6')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('6')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade6">0</span>
+            </li>
+            <li>
+                <p id="produto7">kafta de frango</p> 
+                <span id="valor7">R$ 6.00</span>
+                <button onclick="retirarItem('7')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('7')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade7">0</span>
+            </li>
+            <li>
+                <p id="produto8">kafta recheada</p> 
+                <span id="valor8">R$ 8.00</span>
+                <button onclick="retirarItem('8')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('8')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade8">0</span>
+            </li>
+            <li>
+                <p id="produto9">linguiça suína</p> 
+                <span id="valor9">R$ 6.00</span>
+                <button onclick="retirarItem('9')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('9')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade9">0</span>
+            </li>
+            <li>
+                <p id="produto10">linguiça apimentada</p> 
+                <span id="valor10">R$ 6.00</span>
+                <button onclick="retirarItem('10')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('10')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade10">0</span>
+            </li>
+            <li>
+                <p id="produto11">linguiça toscana</p> 
+                <span id="valor11">R$ 6.00</span>
+                <button onclick="retirarItem('11')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('11')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade11">0</span>
+            </li>
+            <li>
+                <p id="produto12">pão de alho</p> 
+                <span id="valor12">R$ 6.00</span>
+                <button onclick="retirarItem('12')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('12')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade12">0</span>
+            </li>
+            <li>
+                <p id="produto13">medalhão de frango</p> 
+                <span id="valor13">R$ 7.00</span>
+                <button onclick="retirarItem('13')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('13')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade13">0</span>
+            </li>
+            <li>
+                <p id="produto14">medalhão de mussarela</p> 
+                <span id="valor14">R$ 7.00</span>
+                <button onclick="retirarItem('14')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('14')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade14">0</span>
+            </li>
+            <li>
+                <p id="produto15">medalhão romeu e julieta</p> 
+                <span id="valor15">R$ 8.00</span>
+                <button onclick="retirarItem('15')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('15')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade15">0</span>
+            </li>
+            <li>
+                <p id="produto16">medalhão mandioca</p> 
+                <span id="valor16">R$ 8.00</span>
+                <button onclick="retirarItem('16')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('16')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade16">0</span>
+            </li>
+            <li>
+                <p id="produto17">panceta</p> 
+                <span id="valor17">R$ 6.00</span>
+                <button onclick="retirarItem('17')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('17')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade17">0</span>
+            </li>
+            <li>
+                <p id="produto18">tabua de mandioca e tomate (inteira)</p>
+                <span id="valor18">R$ 8.00</span>
+                <button onclick="retirarItem('18')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('18')" class="soma">+ MAIS</button>
+                <span class="espeto" id="quantidade18">0</span>
+            </li>
+        </ul>
 
         <!--Gourmets-->
-        <img class="imagemCircular" src="Assets/Imagens/gourmets.jpg" alt="imagem de gourmets">
-        <div class="cardapio">
-            <input class="ocultar botaoEscondido" type="checkbox" id="Gourmets">
-            <label for="Gourmets">Ver Gourmets</label>
-            <ul class="listaEscondida">
-                <li>
-                    <p id="produto19">queijo coalho com nutella</p>
-                    <span id="valor19">R$ 10.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('19')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('19')" class="soma">+ MAIS</button>
-                        <span class="gourmet" id="quantidade19">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto20">queijo coalho com mel</p>
-                    <span id="valor20">R$ 10.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('20')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('20')" class="soma">+ MAIS</button>
-                        <span class="gourmet" id="quantidade20">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto21">queijo coalho com doce de leite</p>
-                    <span id="valor21">R$ 10.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('21')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('21')" class="soma">+ MAIS</button>
-                        <span class="gourmet" id="quantidade21">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto22">queijo coalho com com goiabada</p>
-                    <span id="valor22">R$ 10.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('22')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('22')" class="soma">+ MAIS</button>
-                        <span class="gourmet" id="quantidade22">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto23">carne com cheddar</p>
-                    <span id="valor23">R$ 10.00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('23')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('23')" class="soma">+ MAIS</button>
-                        <span class="gourmet" id="quantidade23">0</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <img class="imagemCardapio" src="Assets/Imagens/gourmets.jpg" alt="imagem de gourmets">
+        <input class="ocultar botaoEscondido" type="checkbox" id="Gourmets">
+        <label class="abrirLista" for="Gourmets">Ver Gourmets</label>
+        <ul class="listaEscondida">
+            <li>
+                <p id="produto19">queijo coalho com nutella</p>
+                <span id="valor19">R$ 10.00</span>
+                <button onclick="retirarItem('19')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('19')" class="soma">+ MAIS</button>
+                <span class="gourmet" id="quantidade19">0</span>
+            </li>
+            <li>
+                <p id="produto20">queijo coalho com mel</p>
+                <span id="valor20">R$ 10.00</span>
+                <button onclick="retirarItem('20')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('20')" class="soma">+ MAIS</button>
+                <span class="gourmet" id="quantidade20">0</span>
+            </li>
+            <li>
+                <p id="produto21">queijo coalho com doce de leite</p>
+                <span id="valor21">R$ 10.00</span>
+                <button onclick="retirarItem('21')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('21')" class="soma">+ MAIS</button>
+                <span class="gourmet" id="quantidade21">0</span>
+            </li>
+            <li>
+                <p id="produto22">queijo coalho com com goiabada</p>
+                <span id="valor22">R$ 10.00</span>
+                <button onclick="retirarItem('22')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('22')" class="soma">+ MAIS</button>
+                <span class="gourmet" id="quantidade22">0</span>
+            </li>
+            <li>
+                <p id="produto23">carne com cheddar</p>
+                <span id="valor23">R$ 10.00</span>
+                <button onclick="retirarItem('23')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('23')" class="soma">+ MAIS</button>
+                <span class="gourmet" id="quantidade23">0</span>
+            </li>
+        </ul>
         
         <!--Bebidas-->
-        <img class="imagemCircular" src="Assets/Imagens/bebidas.jpg" alt="imagem de bebidas">
-        <div class="cardapio">
-            <input class="ocultar botaoEscondido" type="checkbox" id="Bebidas">
-            <label for="Bebidas">Ver Bebidas</label>
-            <ul class="listaEscondida">
-                <li>
-                    <p id="produto24">Refrigerante lata</p> 
-                    <span id="valor24">R$ 5,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('24')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('24')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade24">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto25">Coca-cola 2 Litros</p> 
-                    <span id="valor25">R$ 12,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('25')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('25')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade25">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto26">Coca-cola 1 Litro</p> 
-                    <span id="valor26">R$ 8,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('26')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('26')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade26">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto27">Guaraná Antártica 1 Litro</p> 
-                    <span id="valor27">R$ 8,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('27')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('27')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade27">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto28">Água Mineral (com ou sem gás)</p> 
-                    <span id="valor28">R$ 3,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('28')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('28')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade28">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto29">Suco de Laranja 250 ML</p> 
-                    <span id="valor29">R$ 8,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('29')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('29')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade29">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto30">Suco de Laranja 500 ML</p> 
-                    <span id="valor30">R$ 10,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('30')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('30')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade30">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto31">Suco de Laranja 1L</p> 
-                    <span id="valor31">R$ 18,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('31')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('31')" class="soma">+ MAIS</button>
-                        <span class="bebida" id="quantidade31">0</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <img class="imagemCardapio" src="Assets/Imagens/bebidas.jpg" alt="imagem de bebidas">
+        <input class="ocultar botaoEscondido" type="checkbox" id="Bebidas">
+        <label class="abrirLista" for="Bebidas">Ver Bebidas</label>
+        <ul class="listaEscondida">
+            <li>
+                <p id="produto24">Refrigerante lata</p> 
+                <span id="valor24">R$ 5,00</span>
+                <button onclick="retirarItem('24')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('24')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade24">0</span>
+            </li>
+            <li>
+                <p id="produto25">Coca-cola 2 Litros</p> 
+                <span id="valor25">R$ 12,00</span>
+                <button onclick="retirarItem('25')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('25')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade25">0</span>
+            </li>
+            <li>
+                <p id="produto26">Coca-cola 1 Litro</p> 
+                <span id="valor26">R$ 8,00</span>
+                <button onclick="retirarItem('26')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('26')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade26">0</span>
+            </li>
+            <li>
+                <p id="produto27">Guaraná Antártica 1 Litro</p> 
+                <span id="valor27">R$ 8,00</span>
+                <button onclick="retirarItem('27')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('27')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade27">0</span>
+            </li>
+            <li>
+                <p id="produto28">Água Mineral (com ou sem gás)</p> 
+                <span id="valor28">R$ 3,00</span>
+                <button onclick="retirarItem('28')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('28')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade28">0</span>
+            </li>
+            <li>
+                <p id="produto29">Suco de Laranja 250 ML</p> 
+                <span id="valor29">R$ 8,00</span>
+                <button onclick="retirarItem('29')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('29')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade29">0</span>
+            </li>
+            <li>
+                <p id="produto30">Suco de Laranja 500 ML</p> 
+                <span id="valor30">R$ 10,00</span>
+                <button onclick="retirarItem('30')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('30')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade30">0</span>
+            </li>
+            <li>
+                <p id="produto31">Suco de Laranja 1L</p> 
+                <span id="valor31">R$ 18,00</span>
+                <button onclick="retirarItem('31')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('31')" class="soma">+ MAIS</button>
+                <span class="bebida" id="quantidade31">0</span>
+            </li>
+        </ul>
 
         <!--Cervejas-->
-        <img class="imagemCircular" src="Assets/Imagens/cervejas.jpg" alt="imagem de cervejas">
-        <div class="cardapio">
-            <input class="ocultar botaoEscondido" type="checkbox" id="Cervejas">
-            <label for="Cervejas">Ver Cervejas</label>
-            <ul class="listaEscondida">
-                <li>
-                    <p id="produto32">Skol 600ML</p>
-                    <span id="valor32">R$ 10,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('32')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('32')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade32">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto33">Brama 600ML</p>
-                    <span id="valor33">R$ 10,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('33')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('33')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade33">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto34">Antártica 600ML</p>
-                    <span id="valor34">R$ 10,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('34')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('34')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade34">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto35">Heineken 600ML</p>
-                    <span id="valor35">R$ 14,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('35')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('35')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade35">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto36">Heineken 250ML</p>
-                    <span id="valor36">R$ 7,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('36')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('36')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade36">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto37">Heineken Zero Álcool</p>
-                    <span id="valor37">R$ 9,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('37')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('37')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade37">0</span>
-                    </div>
-                </li>
-                <li>
-                    <p id="produto38">Cerveja lata</p>
-                    <span id="valor38">R$ 5,00</span>
-                    <div class="selecionar">
-                        <button onclick="retirarItem('38')" class="subtrai">- MENOS</button>
-                        <button onclick="adicionarItem('38')" class="soma">+ MAIS</button>
-                        <span class="cerveja" id="quantidade38">0</span>
-                    </div>
-                </li>
-            </ul>
+        <img class="imagemCardapio" src="Assets/Imagens/cervejas.jpg" alt="imagem de cervejas">
+        <input class="ocultar botaoEscondido" type="checkbox" id="Cervejas">
+        <label class="abrirLista" for="Cervejas">Ver Cervejas</label>
+        <ul class="listaEscondida">
+            <li>
+                <p id="produto32">Skol 600ML</p>
+                <span id="valor32">R$ 10,00</span>
+                <button onclick="retirarItem('32')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('32')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade32">0</span>
+            </li>
+            <li>
+                <p id="produto33">Brama 600ML</p>
+                <span id="valor33">R$ 10,00</span>
+                <button onclick="retirarItem('33')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('33')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade33">0</span>
+            </li>
+            <li>
+                <p id="produto34">Antártica 600ML</p>
+                <span id="valor34">R$ 10,00</span>
+                <button onclick="retirarItem('34')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('34')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade34">0</span>
+            </li>
+            <li>
+                <p id="produto35">Heineken 600ML</p>
+                <span id="valor35">R$ 14,00</span>
+                <button onclick="retirarItem('35')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('35')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade35">0</span>
+            </li>
+            <li>
+                <p id="produto36">Heineken 250ML</p>
+                <span id="valor36">R$ 7,00</span>
+                <button onclick="retirarItem('36')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('36')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade36">0</span>
+            </li>
+            <li>
+                <p id="produto37">Heineken Zero Álcool</p>
+                <span id="valor37">R$ 9,00</span>
+                <button onclick="retirarItem('37')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('37')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade37">0</span>
+            </li>
+            <li>
+                <p id="produto38">Cerveja lata</p>
+                <span id="valor38">R$ 5,00</span>
+                <button onclick="retirarItem('38')" class="subtrai">- MENOS</button>
+                <button onclick="adicionarItem('38')" class="soma">+ MAIS</button>
+                <span class="cerveja" id="quantidade38">0</span>
+            </li>
+        </ul>
+        
+        <!--Combos-->
+        <h2>CONFIRA NOSSOS COMBOS</h2>
+        <div class="especial">
+            <div class="combos">
+
+                <!--COMBO P-->
+                <div id="combo1" class="combo">
+                    <img src="Assets/Imagens/COMBO_P.png" alt="imagem combo p">
+                    <h3>COMBO P</h3>
+                    <p>
+                        2 espetos de R$ 6.00 <br>
+                        1 espeto de R$ 7.00 <br>
+                        1 Torre de chopp 1L <br>
+                        1/2 Tábua <br>
+                    </p>
+                    <span><del>R$ 44.00</del>R$ 36.90</span>
+                    <button class="btnPedido gerarPedido" id="gerar1" onclick="pedirCombo('1')">Gerar Pedido</button>
+                </div>
+
+                <!--COMBO M-->
+                <div id="combo2" class="combo">
+                    <img src="Assets/Imagens/COMBO_M.png" alt="imagem combo m">
+                    <h3>COMBO M</h3>
+                    <p>
+                        4 espetos de R$ 6.00 <br>
+                        2 espeto de R$ 7.00 <br>
+                        1 Torre de chopp 2L <br>
+                        1/2 Tábua <br>
+                    </p>
+                    <span><del>R$ 83.00</del>R$ 68.90</span>
+                    <button class="btnPedido gerarPedido" onclick="pedirCombo('2')" id="gerar2">Gerar Pedido</button>
+                </div>
+
+                <!--COMBO G-->
+                <div id="combo3" class="combo">
+                    <img src="Assets/Imagens/COMBO_G.png" alt="imagem combo g">
+                    <h3>COMBO G</h3>
+                    <p>
+                        6 espetos de R$ 6.00 <br>
+                        4 espeto de R$ 7.00 <br>
+                        1 Torre de chopp 3L <br>
+                        1 Tábua <br>
+                    </p>
+                    <span><del>R$ 131.00</del>R$ 109.90</span>
+                    <button class="btnPedido gerarPedido" id="gerar3" onclick="pedirCombo('3')">Gerar Pedido</button>
+                </div>
+            </div>
         </div>
 
-         <!--Combos & Chopps-->
-         <section class="especiais">
-
-            <!--Combos-->
-            <h2>CONFIRA NOSSOS COMBOS</h2>
-            <div class="especial">
-                <div class="combos">
-
-                    <!--COMBO P-->
-                    <div id="combo1" class="combo">
-                        <img src="Assets/Imagens/COMBO_P.png" alt="imagem combo p">
-                        <h3>COMBO P</h3>
-                        <p>
-                            2 espetos de R$ 6.00 <br>
-                            1 espeto de R$ 7.00 <br>
-                            1 Torre de chopp 1L <br>
-                            1/2 Tábua <br>
-                        </p>
-                        <span><del>R$ 44.00</del>R$ 36.90</span>
-                        <button class="gerarPedido" id="gerar1" onclick="pedirCombo('1')">Gerar Pedido</button>
-                    </div>
-
-                    <!--COMBO M-->
-                    <div id="combo2" class="combo">
-                        <img src="Assets/Imagens/COMBO_M.png" alt="imagem combo m">
-                        <h3>COMBO M</h3>
-                        <p>
-                            4 espetos de R$ 6.00 <br>
-                            2 espeto de R$ 7.00 <br>
-                            1 Torre de chopp 2L <br>
-                            1/2 Tábua <br>
-                        </p>
-                        <span><del>R$ 83.00</del> R$ 68.90</span>
-                        <button class="gerarPedido" onclick="pedirCombo('2')" id="gerar2">Gerar Pedido</button>
-                    </div>
-
-                    <!--COMBO G-->
-                    <div id="combo3" class="combo">
-                        <img src="Assets/Imagens/COMBO_G.png" alt="imagem combo g">
-                        <h3>COMBO G</h3>
-                        <p>
-                            6 espetos de R$ 6.00 <br>
-                            4 espeto de R$ 7.00 <br>
-                            1 Torre de chopp 3L <br>
-                            1 Tábua <br>
-                        </p>
-                        <span><del>R$ 131.00</del>R$ 109.90</span>
-                        <button class="gerarPedido" id="gerar3" onclick="pedirCombo('3')">Gerar Pedido</button>
-                    </div>
-
+        <!--Chopps-->
+        <h2>CURTA NOSSO AMBIENTE</h2>
+        <div class="especial">
+            <div class="chopps">
+                <div id="divChopp39" class="chopp">
+                    <h3 id="chopp39">CHOPP 300 ML </h3>
+                    <br><i id="valor39">R$ 7.00</i>
+                    <img src="Assets/Imagens/chopp1.jpg" alt="imagem de chopp 300 ml">
+                    <p id="quantChopp39">0</p>
+                    <button onclick="retChopp('39')" class="selecionarChopp subtrai">Menos</button>
+                    <button onclick="addChopp('39')" class="selecionarChopp soma">Mais</button>
+                    <button id="gerarChopp39" onclick="gerarChopp('39')" class="btnPedido gerarPedido">Gerar Pedido</button>
+                </div>
+                <div id="divChopp40" class="chopp">
+                    <h3 id="chopp40">CHOPP 600 ML</h3>
+                    <br><i id="valor40">R$ 12.00 </i>
+                    <img src="Assets/Imagens/chopp2.jpg" alt="imagem de chopp 600 ml">
+                    <p id="quantChopp40">0</p>
+                    <button onclick="retChopp('40')" class="selecionarChopp subtrai">Menos</button>
+                    <button onclick="addChopp('40')" class="selecionarChopp soma">Mais</button>
+                    <button id="gerarChopp40" onclick="gerarChopp('40')" class="btnPedido gerarPedido">Gerar Pedido</button>
+                </div>
+                <div id="divChopp41" class="chopp">
+                    <h3 id="chopp41">TORRE CHOPP LITRO</h3>
+                    <br><i id="valor41">R$ 20.00</i>
+                    <img src="Assets/Imagens/chopp3.jpg" alt="imagem de torre 1 litro de chopp">
+                    <p id="quantChopp41">0</p>
+                    <button onclick="retChopp('41')" class="selecionarChopp subtrai">Menos</button>
+                    <button onclick="addChopp('41')" class="selecionarChopp soma">Mais</button>
+                    <button id="gerarChopp41" onclick="gerarChopp('41')" class="btnPedido gerarPedido">Gerar Pedido</button>
+                </div>
+                <div id="divChopp42" class="chopp">
+                    <h3 id="chopp42"> CHOPP VINHO LATA</h3>
+                    <br><i id="valor42">R$ 8.00</i>
+                    <img src="Assets/Imagens/vinhoLata.jpg" alt="imagem de vinho lata">
+                    <p id="quantChopp42">0</p>
+                    <button onclick="retChopp('42')" class="selecionarChopp subtrai">Menos</button>
+                    <button onclick="addChopp('42')" class="selecionarChopp soma">Mais</button>
+                    <button id="gerarChopp42" onclick="gerarChopp('42')" class="btnPedido gerarPedido">Gerar Pedido</button>
                 </div>
             </div>
-
-            <!--Chopps-->
-            <h2>CURTA NOSSO AMBIENTE</h2>
-            <div class="especial">
-                <div class="chopps">
-                    <div id="divChopp39" class="chopp">
-                        <h3 id="chopp39">CHOPP 300 ML </h3>
-                        <br><i id="valor39">R$ 7.00</i>
-                        <img src="Assets/Imagens/chopp1.jpg" alt="imagem de chopp 300 ml">
-                        <p id="quantChopp39">0</p>
-                        <button onclick="retChopp('39')" class="selecionarChopp subtrai">Menos</button>
-                        <button onclick="addChopp('39')" class="selecionarChopp soma">Mais</button>
-                        <button id="gerarChopp39" onclick="gerarChopp('39')" class="gerarPedido">Gerar Pedido</button>
-                    </div>
-                    <div id="divChopp40" class="chopp">
-                        <h3 id="chopp40">CHOPP 600 ML</h3>
-                        <br><i id="valor40">R$ 12.00 </i>
-                        <img src="Assets/Imagens/chopp2.jpg" alt="imagem de chopp 600 ml">
-                        <p id="quantChopp40">0</p>
-                        <button onclick="retChopp('40')" class="selecionarChopp subtrai">Menos</button>
-                        <button onclick="addChopp('40')" class="selecionarChopp soma">Mais</button>
-                        <button id="gerarChopp40" onclick="gerarChopp('40')" class="gerarPedido">Gerar Pedido</button>
-                    </div>
-                    <div id="divChopp41" class="chopp">
-                        <h3 id="chopp41">TORRE CHOPP LITRO</h3>
-                        <br><i id="valor41">R$ 20.00</i>
-                        <img src="Assets/Imagens/chopp3.jpg" alt="imagem de torre 1 litro de chopp">
-                        <p id="quantChopp41">0</p>
-                        <button onclick="retChopp('41')" class="selecionarChopp subtrai">Menos</button>
-                        <button onclick="addChopp('41')" class="selecionarChopp soma">Mais</button>
-                        <button id="gerarChopp41" onclick="gerarChopp('41')" class="gerarPedido">Gerar Pedido</button>
-                    </div>
-                    <div id="divChopp42" class="chopp">
-                        <h3 id="chopp42"> CHOPP VINHO LATA</h3>
-                        <br><i id="valor42">R$ 8.00</i>
-                        <img src="Assets/Imagens/vinhoLata.jpg" alt="imagem de vinho lata">
-                        <p id="quantChopp42">0</p>
-                        <button onclick="retChopp('42')" class="selecionarChopp subtrai">Menos</button>
-                        <button onclick="addChopp('42')" class="selecionarChopp soma">Mais</button>
-                        <button id="gerarChopp42" onclick="gerarChopp('42')" class="gerarPedido">Gerar Pedido</button>
-                    </div>
-                </div>
-            </div>
-
-         </section>
+        </div>
     </main>
+
+    <!--Finalizar fixed-->
+    <section id="finalizar" class="finalizar">
+        <p>Total: R$<span id="Total"></span></p>
+        <button onclick="abrirModal()">Finalizar</button>
+    </section>
+
+    <!--Modal fixed-->
+    <section class="modal" id="modal">
+        <img id="fechar" onclick="fecharModal()" src="Assets/Icones/X.png" alt="icone fechar janela">
+        <h2>Agradecemos pela preferência</h2>
+        <img src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
+        <div id="infoCliente">
+            <input id="nome" type="text" placeholder="Digite seu nome">
+            <select onchange="troco()" class="inputFinal" id="formaPagamento">
+                <option value="1">Forma de pagamento</option>
+                <option value="2">Dinheiro</option>
+                <option value="3">Cartão</option>
+                <option value="4">Pix</option>
+            </select>
+            <input id="troco" type="number" class="ocultar" placeholder="Troco para qual valor ">
+            <p>entrega a partir das 19h:00</p>
+            <input type="checkbox" id="entrega">
+            <label for="entrega">Para entrega</label>
+            <input id="campoEntrega" class="campoEntrega" type="text" placeholder="Digite seu endereço">
+            <button class="btnPedido gerarPedido" id="btnGerarLista" onclick="gerarLista()">Gerar Pedido</button>
+        </div>
+    </section>
 
     <!--Créditos de desenvolvimento-->
     <footer>
-
-        <div id="finalizar" class="finalizar">
-            <p>Total: R$<span id="Total"></span></p>
-            <button onclick="abrirModal()">Finalizar</button>
-        </div>
-        <div id="fundoModal"></div>
-        <div id="modal">
-            <h3>Agradecemos pela preferência</h3>
-            <img onclick="fecharModal()" class="fechar" src="Assets/Icones/X.png" alt="icone fechar janela">
-            <img class="logoFinal" src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
-            <div id="infoCliente">
-                <input id="nome" class="inputFinal" type="text" placeholder="Digite seu nome">
-                <select onchange="troco()" class="inputFinal" id="formaPagamento">
-                    <option value="1">Forma de pagamento</option>
-                    <option value="2">Dinheiro</option>
-                    <option value="3">Cartão</option>
-                    <option value="4">Pix</option>
-                </select>
-                <input id="troco" type="number" class="inputFinal ocultar" placeholder="Troco para qual valor ">
-                <p>entrega a partir das 19h:00</p>
-                <div class="entrega">
-                    <input type="checkbox" id="entrega">
-                    <label for="entrega">Para entrega</label>
-                    <input id="campoEntrega" class="inputFinal " type="text" placeholder="Digite seu endereço">
-                </div>
-                <button id="btnGerarLista" onclick="gerarLista()">Gerar Pedido</button>
-            </div>
-            <p id="listaFinal"></p>
-            <div id="separarEnviar"></div>
-        </div>
-
         <h2>MAF</h2>
         <p>Developed by Matheus Arantes Ferreira</p>
         <a href="https://matheusarantesferreira.com.br/">Acesse nosso site <img src="Assets/Icones/link.png" alt="icone links"></a>    

@@ -96,7 +96,6 @@ function gerarLista(){
                 if(parseInt(get('quantidade'+i).innerHTML)> 0){
                     listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
                     link +=get('quantidade'+i).innerHTML+"%20-%20"+ get('produto'+i).innerHTML+"%20(R$"+(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)+")%0A";
-                        
                 }
             }
             if(get('campoEntrega').value != ""){
@@ -105,8 +104,8 @@ function gerarLista(){
             }
             listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
             link+="%0ATotal=%20R$"+Total.toFixed(2);
-            get('listaFinal').innerHTML=listaFinal;
-            get('separarEnviar').innerHTML=`<a class="enviar" href="${link}">Enviar pedido</a>`
+            get('modal').innerHTML+=`<p>${listaFinal}</p>`;
+            get('modal').innerHTML+=`<a class="enviarPedido btnPedido" href="${link}">Enviar pedido</a>`
             get('infoCliente').style.display='none';
         }
         else{
@@ -191,7 +190,7 @@ function pedirCombo(identificador){
                 break;
         }
         linkCombo+="%20"+tipoCombo+"%20para%20"+nome+"%0A%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)%0A%0ATotal:%20R$%20"+quant5;
-        get('combo'+identificador).innerHTML+=`<a href="${linkCombo}">Enviar pedido</a>`;
+        get('combo'+identificador).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkCombo}">Enviar pedido</a>`;
         get('gerar'+identificador).style.display="none";
     }
 }
@@ -226,7 +225,7 @@ function gerarChopp(identificador){
             nomeChopp= get('chopp'+identificador).innerHTML;
             linkChopp+= get('quantChopp'+identificador).innerHTML+"%20"+nomeChopp+"%20(s)%20para%20"+nome;
             get('gerarChopp'+identificador).style.display="none";
-            get('divChopp'+identificador).innerHTML+=`<a class='gerarPedido' href="${linkChopp}">Pedir</a>`;
+            get('divChopp'+identificador).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkChopp}">Enviar pedido</a>`;
         }
     }
 }

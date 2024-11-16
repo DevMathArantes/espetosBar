@@ -1,37 +1,31 @@
-#fundoModal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--cor4);
-    opacity: 0.5;
-    display: none;
-}
-#modal{
+.modal{
     width: 100%;
     background-color: var(--cor2);
     position: fixed;
     top: 0;
     left: 0;
     display: none;
-    padding: 4em 1em 2em 1em;
-    align-items: center;
+    padding: 1em;
+    justify-content: center;
     overflow: auto;
-    flex-direction: column;
+    flex-flow: row wrap;
     gap: 1em;
     height: 100vh;
+    color: var(--cor1);
 }
-.logoFinal{
+.modal img{
     width: 60%;
 }
-.fechar{
-    top: 1em;
-    right: 1em;
-    position: absolute;
-    width: 6%;
+.modal h2{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
 }
-.inputFinal{
+#fechar{
+    width: 5%;
+    margin-left: auto;
+}
+.modal input, .modal select{
     color: var(--cor1);
     background-color: var(--cor2);
     border: 2px solid var(--cor3);
@@ -40,63 +34,29 @@
     font-family: var(--fontDestaque);
     width: 100%;
 }
-#modal input::placeholder{
+.modal input::placeholder{
     color: var(--cor1);
 }
-.entrega{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    line-height: 4em;
-}
-.entrega label{
+.modal label{
     font-size: 0.8rem;
     font-family: var(--fontDestaque);
 }
-#campoEntrega{
+.campoEntrega{
     display: none;
 }
-#entrega:checked~  #campoEntrega{
+#entrega:checked~  .campoEntrega{
     display: block;
 }
-#modal button{
-    background-color: var(--cor3);
-    color: var(--cor1);
-    border: 0;
-    padding: 1em;
-    border-radius: 10px;
-    width: 70%;
-    font-size: 1rem;
-}
-#modal p{
+.modal p{
     width: 100%;
     text-align: left;
+    font-family: var(--fontDestaque);
     line-height: 2em;
-    font-family: var(--fontDestaque);
-}
-.enviar{
-    background-image: url('../Assets/Icones/whatsapp.png');
-    background-size: 12%;
-    background-repeat: no-repeat;
-    background-position: 10%;
-    font-weight: 600;
-    font-family: var(--fontDestaque);
-    background-color: var(--cor3);
-    padding: 1em;
-    border-radius: 10px;
-    width: 70%;
-}
-#separarEnviar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin: 0;
 }
 #infoCliente{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 1em;
     width: 100%;
