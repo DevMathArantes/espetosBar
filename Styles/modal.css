@@ -23,8 +23,10 @@
 }
 #fechar{
     width: 5%;
-    height: 3vh;
+    height: 2vh;
     margin-left: auto;
+    margin-right: 1em;
+    margin: 0.5em 0.5em 0 auto;
 }
 .modal input, .modal select{
     color: var(--cor1);
@@ -41,9 +43,6 @@
 .modal label{
     font-size: 0.8rem;
     font-family: var(--fontDestaque);
-}
-.campoEntrega{
-    display: none;
 }
 #entrega:checked~  .campoEntrega{
     display: block;
