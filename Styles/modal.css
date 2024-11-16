@@ -14,7 +14,8 @@
     color: var(--cor1);
 }
 .modal img{
-    width: 50%;
+    width: 50vw;
+    height: 50vw;
 }
 .modal h2{
     width: 100%;
