@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     display: none;
-    padding: 1em;
+    padding: 1em 1em 4em 1em;
     justify-content: center;
     overflow: auto;
     flex-flow: row wrap;
@@ -14,8 +14,8 @@
     color: var(--cor1);
 }
 .modal img{
-    width: 50%;
-    height: auto;
+    width: 15em;
+    height: 15em;
 }
 .modal h2{
     width: 100%;
@@ -45,7 +45,7 @@
     font-size: 0.8rem;
     font-family: var(--fontDestaque);
 }
-#entrega:checked~  .campoEntrega{
+#entrega:checked~  #campoEntrega{
     display: block;
 }
 .modal p{
