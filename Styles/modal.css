@@ -1,3 +1,4 @@
+/*modal*/
 .modal{
     width: 100%;
     background-color: var(--cor2);
@@ -5,60 +6,7 @@
     top: 0;
     left: 0;
     display: none;
-    padding: 1em 1em 4em 1em;
-    justify-content: center;
     overflow: auto;
-    flex-flow: row wrap;
-    gap: 1em;
     height: 100vh;
     color: var(--cor1);
-}
-.modal img{
-    width: 15em;
-    height: 15em;
-}
-.modal h2{
-    width: 100%;
-    font-size: 1.2rem;
-    text-align: center;
-}
-#fechar{
-    width: 5vw;
-    height: 5vw;
-    margin-left: auto;
-    margin-right: 1em;
-    margin: 0.5em 0.5em 0 auto;
-}
-.modal input, .modal select{
-    color: var(--cor1);
-    background-color: var(--cor2);
-    border: 2px solid var(--cor3);
-    padding: 0.5em;
-    border-radius: 10px;
-    font-family: var(--fontDestaque);
-    width: 100%;
-}
-.modal input::placeholder{
-    color: var(--cor1);
-}
-.modal label{
-    font-size: 0.8rem;
-    font-family: var(--fontDestaque);
-}
-#entrega:checked~  #campoEntrega{
-    display: block;
-}
-.modal p{
-    width: 100%;
-    text-align: left;
-    font-family: var(--fontDestaque);
-    line-height: 2em;
-    margin: 0;
-}
-#infoCliente{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
 }

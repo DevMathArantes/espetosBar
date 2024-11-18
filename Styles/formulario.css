@@ -1,3 +1,56 @@
 .formulario{
     z-index: 5;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1em;
+    padding: 1em;
+}
+.formulario img{
+    width: 15em;
+    height: 15em;
+}
+.formulario h2{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#fechar{
+    width: 5vw;
+    height: 5vw;
+    margin-left: auto;
+    margin-right: 1em;
+    margin: 0.5em 0.5em 0 auto;
+}
+.formulario input, .modal select{
+    color: var(--cor1);
+    background-color: var(--cor2);
+    border: 2px solid var(--cor3);
+    padding: 0.5em;
+    border-radius: 10px;
+    font-family: var(--fontDestaque);
+    width: 100%;
+}
+.formulario input::placeholder{
+    color: var(--cor1);
+}
+.formulario label{
+    font-size: 0.8rem;
+    font-family: var(--fontDestaque);
+}
+#entrega:checked~  #campoEntrega{
+    display: block;
+}
+.formulario p{
+    width: 100%;
+    text-align: left;
+    font-family: var(--fontDestaque);
+    line-height: 2em;
+    margin: 0;
+}
+#infoCliente{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
 }

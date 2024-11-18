@@ -51,7 +51,7 @@
     width: 85%;
     text-align: center;
     color: var(--cor1);
-    padding: 1.2em 0.7em;
+    padding: 1em 0.7em;
     border-radius: 10px;
     font-family: var(--fontDestaque);
     border: 2px solid var(--cor5);
@@ -63,6 +63,7 @@
     background-size: 5%;
     background-repeat: no-repeat;
     background-position: 90%;
+    background-image: url(../Assets/Icones/setaDireita.png);
 }
 .botaoEscondido:checked~.listaEscondida{
     display: block;
@@ -77,6 +78,8 @@
     z-index: 4;
     border: 0;
     border-radius: 0;
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 10px var(--cor2);
 }
 
 /*Botões "mais" e "menos"*/

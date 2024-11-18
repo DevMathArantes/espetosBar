@@ -1,14 +1,15 @@
-
+/*Especiais*/
 .especial{
     overflow: auto;
     padding: 2em 0;
     color: var(--cor1);
 }
-
 .chopps, .combos{
     display: flex;
     margin-left: 5%;
 }
+
+/*Combo*/
 .combos{
     width: 225%;
 }
@@ -26,7 +27,6 @@
     line-height: 1.5em;
     font-family: var(--fontDestaque);
 }
-
 .combo span{
     display: flex;
     flex-direction: column;
@@ -42,6 +42,8 @@
     width: 95%;
     border-radius: 20px;
 }
+
+/*Chopps*/
 .chopps{
     width: 300%;
 }
