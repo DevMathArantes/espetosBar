@@ -10,6 +10,7 @@ nav{
     justify-content: end;
     background-color: var(--cor2);
     color: var(--cor1);
+    z-index: 2;
 }
 nav span{
     width: 70%;
@@ -52,6 +53,7 @@ nav span{
         width: 15%;
     }
     .redes a{
+        width: 50%;
         gap: 0.5em;
     }
 }

@@ -68,7 +68,7 @@
     color: var(--cor1);
     width: 40%;
     padding: 0.5em;
-    border: 1px solid var(--cor1);
+    border: 2px solid var(--cor3);
     margin: 1em 0;
 }
 .chopps p{
