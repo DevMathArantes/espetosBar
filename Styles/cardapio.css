@@ -30,7 +30,6 @@
 }
 .listaEscondida li p{
     width: 65%;
-    font-size: 0.8rem;
     font-weight: 700;
 }
 .listaEscondida li span{
@@ -115,5 +114,12 @@
 }
 
 @media screen and (min-width: 724px){
-    
+    .tipoCardapio{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1300px){
+    .tipoCardapio{
+        width: 25%;
+    }
 }

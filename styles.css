@@ -49,11 +49,14 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--fontAlta);
 }
 p, a{
+    font-size: 1rem;
     font-family: var(--fontPadrao);
 }
 span, button{
     font-family: var(--fontDestaque);
 }
+
+/*Botões padrão*/
 .enviarPedido{
     background-image: url(Assets/Icones/whatsapp.png);
 }
@@ -70,5 +73,18 @@ span, button{
     padding: 1em;
     text-align: center;
     border-radius: 10px;
-    width: 75%;
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+}
+
+@media screen and (min-width: 724px){
+    p,a{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    
 }
