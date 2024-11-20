@@ -90,8 +90,8 @@ function fecharModal(){
 //gera a lista final (após as verificações)
 function gerarLista(){
     if((get('nome').value!="")){
+        link +=get('nome').value+"%0A%0A";
         if(get('formaPagamento').value!=1 && verificaTroco()){
-            link +=get('nome').value+"%0A%0A";
             for(let i=1; i<=38;i++){
                 if(parseInt(get('quantidade'+i).innerHTML)> 0){
                     listaFinal+=get('quantidade'+i).innerHTML+" - "+ get('produto'+i).innerHTML+"<br>";
