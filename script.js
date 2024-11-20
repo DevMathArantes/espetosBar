@@ -1,7 +1,7 @@
 let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br>";
-let link = "https://wa.me/5516992467515/?text=Pedido";
+let link = "https://wa.me/5516992467515/?text=Pedido%20para%20";
 let controle = 0;
 let linkCombo = "https://wa.me/5516992467515/?text=Combo";
 let quant1;
@@ -100,7 +100,7 @@ function gerarLista(){
             }
             if(get('campoEntrega').value != ""){
                 listaFinal+="<br>Endereço: "+get('campoEntrega').value+"<br>";
-                link+="%0AEndereço:%20"+get('campoEntrega').value+"%0A";
+                link+="%0A%0AEndereço:%20"+get('campoEntrega').value+"%0A";
             }
             listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
             link+="%0ATotal=%20R$"+Total.toFixed(2);
