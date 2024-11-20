@@ -456,18 +456,20 @@
         <h2>Agradecemos pela preferência</h2>
         <img src="Assets/Imagens/espetosBar.jpg" alt="logo espeto's bar">
         <div id="infoCliente">
-            <input id="nome" type="text" placeholder="Digite seu nome">
-            <select onchange="troco()" class="inputFinal" id="formaPagamento">
+            <input class="campo" id="nome" type="text" placeholder="Digite seu nome">
+            <select onchange="troco()" class="inputFinal campo" id="formaPagamento">
                 <option value="1">Forma de pagamento</option>
                 <option value="2">Dinheiro</option>
                 <option value="3">Cartão</option>
                 <option value="4">Pix</option>
             </select>
-            <input id="troco" type="number" class="ocultar" placeholder="Troco para qual valor ">
+            <input id="troco" type="number" class="ocultar campo" placeholder="Troco para qual valor ">
             <p>entrega a partir das 19h:00</p>
-            <input type="checkbox" id="entrega">
-            <label for="entrega">Para entrega</label>
-            <input class="ocultar" id="campoEntrega" type="text" placeholder="Digite seu endereço">
+            <div class="campoEntrega">
+                <input type="checkbox" id="entrega">
+                <label for="entrega">Para entrega</label>
+                <input class="ocultar campo" id="campoEntrega" type="text" placeholder="Digite seu endereço">
+            </div>
             <button class="btnPedido gerarPedido" id="btnGerarLista" onclick="gerarLista()">Gerar Pedido</button>
         </div>
     </section>
