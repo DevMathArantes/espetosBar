@@ -189,8 +189,8 @@ let forma;
         verificaPagamento();
         verificaEndereço();
         if(montar){
+            link +=get('nome').value+"%0APago%20em%20"+forma+"%0A";
             coletarPedido(1);
-            link +=get('nome').value+"%0APago%20em"+forma+"%0A";
             listaFinal += forma+`<br>`;
             listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
             link+="%0ATotal=%20R$"+Total.toFixed(2);
