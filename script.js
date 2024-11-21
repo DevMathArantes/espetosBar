@@ -1,7 +1,7 @@
 let Total = 0.0;
 let Status;
 let listaFinal = "Seu pedido: <br>";
-let link = "https://wa.me/5516992467515/?text=Pedido%20para%20";
+let link = "https://wa.me/5516992467515/?text=Pedido";
 let controle = 0;
 let linkCombo = "https://wa.me/5516992467515/?text=Combo";
 let quant1;
@@ -142,7 +142,7 @@ let forma;
         if(endereco != ""){
             let entrega = get('campoEntrega').value;
             listaFinal+=`<br>Entregar: `+entrega+`<br>`;
-            link+="%0AEntregar:%20"+entrega+"%0A";
+            link+="%0AEntregar:%20"+entrega+"%0A%0A";
         }
     }
 
@@ -189,7 +189,7 @@ let forma;
         verificaPagamento();
         verificaEndereço();
         if(montar){
-            link +=get('nome').value+"%0APago%20em%20"+forma+"%0A";
+            link +="%0A"+get('nome').value+"%0APago%20em%20"+forma+"%0A";
             coletarPedido(1);
             listaFinal += forma+`<br>`;
             listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
