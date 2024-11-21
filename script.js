@@ -189,7 +189,7 @@ let forma;
         verificaPagamento();
         verificaEndereço();
         if(montar){
-            link +="%0A"+get('nome').value+"%0A%0APago%20em%20"+forma+"%0A%0A";
+            link +="%0ANome:%20"+get('nome').value+"%0A%0APago%20em%20"+forma+"%0A%0A";
             coletarPedido(1);
             listaFinal += forma+`<br>`;
             listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
