@@ -124,8 +124,8 @@ let forma;
                 alert("Troco inválido");
             }
             else{
-                link+="%0ATroco%20para%20R$"+get('troco').value+"%20(R$%20"+calculaTroco()+")%0A";
-                listaFinal+=`Troco para R$ `+get('troco').value+" (R$ "+calculaTroco()+")<br>";
+                link+="%0ATroco%20para%20R$"+(get('troco').value).toFixed(2)+"%20(R$%20"+calculaTroco()+")%0A";
+                listaFinal+=`Troco para R$ `+(get('troco').value).toFixed(2)+" (R$ "+calculaTroco()+")<br>";
             }
         }
         if(tipo==3){
