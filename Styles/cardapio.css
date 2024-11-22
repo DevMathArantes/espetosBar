@@ -139,7 +139,7 @@
     }
     .tipoCardapio:hover{
         width: 49%;
-        transition: 1s;
+        transition: 0.5s;
     }
 }
 @media screen and (min-width: 1300px){
@@ -152,10 +152,6 @@
     .listaEscondida{
         flex-flow: row wrap;
         justify-content: space-around;
-    }
-    .imagemCardapio:hover{
-        transition: 1s;
-        box-shadow: 0px 0px 20px var(--cor3);
     }
     .listaEscondida li{
         width: 45%;
