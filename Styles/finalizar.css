@@ -13,8 +13,8 @@
     color: var(--cor1);
     background-image: url(../Assets/Icones/carrinho.png);
     background-repeat: no-repeat;
-    background-size: 10%;
-    background-position: 20%;
+    background-size: 2em;
+    background-position: 5%;
     z-index: 4;
 }
 .finalizar button{
@@ -23,4 +23,14 @@
     border-radius: 10px;
     color: var(--cor1);
     font-weight: 700;
+    width: 10em;
+}
+
+@media screen and (min-width: 724px){
+    .finalizar{
+        justify-content: center;
+        background-position: 25%;
+        padding: 1em;
+    }
+    
 }

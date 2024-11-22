@@ -19,6 +19,7 @@
 .listaEscondida{
     display: none;
     z-index: 3;
+    flex-direction: column;
 }
 .listaEscondida li{
     display: flex;
@@ -43,6 +44,7 @@
     background-position: right;
     background-repeat: no-repeat;
     text-align: center;
+    padding: 2em;
 }
 
 /*Abrir lista*/
@@ -65,7 +67,7 @@
     background-image: url(../Assets/Icones/setaDireita.png);
 }
 .botaoEscondido:checked~.listaEscondida{
-    display: block;
+    display: flex;
     padding: 1em;
 }
 .botaoEscondido:checked~label{
@@ -79,6 +81,9 @@
     border-radius: 0;
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
+}
+.botaoEscondido:checked body{
+    overflow: hidden;
 }
 
 /*Botões "mais" e "menos"*/
@@ -117,9 +122,32 @@
     .tipoCardapio{
         width: 50%;
     }
+    .listaEscondida{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .listaEscondida li{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    .listaEscondida span{
+        background-size: 15%;
+        background-position: 70%;
+    }
+    .abrirLista{
+        background-size: 1em;
+    }
 }
 @media screen and (min-width: 1300px){
     .tipoCardapio{
         width: 25%;
+    }
+    .listaEscondida{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .listaEscondida li{
+        width: 45%;
+        margin-bottom: 3em;
     }
 }
