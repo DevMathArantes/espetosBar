@@ -222,7 +222,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
                 get('gerarChopp').style.display='none';
             }
             else{
-                alert("Preencha o campo Nome")
+                alert("Preencha o campo Nome");
             }
         }
     }
