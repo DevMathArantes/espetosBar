@@ -11,15 +11,15 @@ let quant4;
 let quant5;
 let Combo = 0;
 let tipoCombo;
-let totalChopp;
-let nomeChopp;
-let linkChopp ="https://wa.me/5516992467515/?text=";
 
 //Variável que confirma a montagem da lista
 let montar = true;
 
 //Variável que recebe a forma de pagamento
 let forma;
+
+//Variável link para pedido de chopps
+let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
 
 //Funções coringa
 
@@ -89,7 +89,11 @@ let forma;
         if(tipo ==2){
             for(let i=39; i<=42;i++){
                 if(parseInt(get('quantidade'+i).innerHTML)> 0){
-                    
+                    linkChopp +=get('quantidade'+i).innerHTML
+                    +"%20-%20"
+                    + get('produto'+i).innerHTML+"%20(R$"
+                    +(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)
+                    +")%0A";
                 }
             }
         }
@@ -185,19 +189,34 @@ let forma;
     }
 
     //gera a lista final (após as verificações)
-    function gerarLista(){
-        verificaNome('nome');
-        verificaPagamento();
-        verificaEndereço();
-        if(montar){
-            link +="%0ANome:%20"+get('nome').value+"%0A%0APago%20em%20"+forma+"%0A%0A";
-            coletarPedido(1);
-            listaFinal += forma+`<br>`;
-            listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
-            link+="%0ATotal=%20R$"+Total.toFixed(2);
-            get('modal').innerHTML+=`<p>${listaFinal}</p>`;
-            get('modal').innerHTML+=`<a class="enviarPedido btnPedido" href="${link}">Enviar pedido</a>`
-            get('infoCliente').style.display='none';
+    function gerarLista(tipo){
+        if(tipo == '1'){
+            verificaNome('nome');
+            verificaPagamento();
+            verificaEndereço();
+            if(montar){
+                link +="%0ANome:%20"+get('nome').value+"%0A%0APago%20em%20"+forma+"%0A%0A";
+                coletarPedido(1);
+                listaFinal += forma+`<br>`;
+                listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
+                link+="%0ATotal=%20R$"+Total.toFixed(2);
+                get('modal').innerHTML+=`<p>${listaFinal}</p>`;
+                get('modal').innerHTML+=`<a class="enviarPedido btnPedido" href="${link}">Enviar pedido</a>`
+                get('infoCliente').style.display='none';
+            }
+        }
+        if(tipo == '2'){
+            let nome = prompt("Digite o seu nome: ");
+            if(nome != ""){
+                linkChopp +="%0ANome:%20"+nome+"%0A%0A";
+                coletarPedido(2);
+                link+="%0ATotal=%20R$"+Total.toFixed(2);
+                get('principal').innerHTML+=`<a class="enviarPedido btnPedido" href="${linkChopp}">Enviar pedido</a>`
+                get('gerarChopp').style.display='none';
+            }
+            else{
+                alert("Preencha o campo Nome")
+            }
         }
     }
 

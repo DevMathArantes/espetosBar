@@ -42,7 +42,7 @@
     </nav>
 
     <!--Conteúdo principal-->
-    <main>
+    <main id="principal">
 
         <!--Espetos-->
         <div class="tipoCardapio">
@@ -404,32 +404,32 @@
         <h2>CURTA NOSSO AMBIENTE</h2>
         <div class="especial">
             <div class="chopps">
-                <div id="divChopp39" class="chopp">
-                    <h3 id="chopp39">CHOPP 300 ML </h3>
+                <div class="chopp">
+                    <h3 id="produto39">CHOPP 300 ML </h3>
                     <br><i id="valor39">R$ 7.00</i>
                     <img src="Assets/Imagens/chopp1.jpg" alt="imagem de chopp 300 ml">
                     <p id="quantidade39">0</p>
                     <button onclick="retirarItem('39')" class="selecionarChopp subtrai">Menos</button>
                     <button onclick="adicionarItem('39')" class="selecionarChopp soma">Mais</button>
                 </div>
-                <div id="divChopp40" class="chopp">
-                    <h3 id="chopp40">CHOPP 600 ML</h3>
+                <div class="chopp">
+                    <h3 id="produto40">CHOPP 600 ML</h3>
                     <br><i id="valor40">R$ 12.00 </i>
                     <img src="Assets/Imagens/chopp2.jpg" alt="imagem de chopp 600 ml">
                     <p id="quantidade40">0</p>
                     <button onclick="retirarItem('40')" class="selecionarChopp subtrai">Menos</button>
                     <button onclick="adicionarItem('40')" class="selecionarChopp soma">Mais</button>
                 </div>
-                <div id="divChopp41" class="chopp">
-                    <h3 id="chopp41">TORRE CHOPP LITRO</h3>
+                <div class="chopp">
+                    <h3 id="produto41">TORRE CHOPP LITRO</h3>
                     <br><i id="valor41">R$ 20.00</i>
                     <img src="Assets/Imagens/chopp3.jpg" alt="imagem de torre 1 litro de chopp">
                     <p id="quantidade41">0</p>
                     <button onclick="retirarItem('41')" class="selecionarChopp subtrai">Menos</button>
                     <button onclick="adicionarItem('41')" class="selecionarChopp soma">Mais</button>
                 </div>
-                <div id="divChopp42" class="chopp">
-                    <h3 id="chopp42"> CHOPP VINHO LATA</h3>
+                <div class="chopp">
+                    <h3 id="produto42"> CHOPP VINHO LATA</h3>
                     <br><i id="valor42">R$ 8.00</i>
                     <img src="Assets/Imagens/vinhoLata.jpg" alt="imagem de vinho lata">
                     <p id="quantidade42">0</p>
@@ -438,7 +438,7 @@
                 </div>
             </div>
         </div>
-        <button class="btnPedido gerarPedido">Gerar Pedido</button>
+        <button id="gerarChopp" onclick="gerarLista('2')" class="btnPedido gerarPedido">Gerar Pedido</button>
     </main>
 
     <!--Finalizar fixed-->
@@ -467,7 +467,7 @@
                 <label for="entrega">Para entrega</label>
                 <input class="ocultar campo" id="campoEntrega" type="text" placeholder="Digite seu endereço">
             </div>
-            <button class="btnPedido gerarPedido" id="btnGerarLista" onclick="gerarLista()">Gerar Pedido</button>
+            <button class="btnPedido gerarPedido" id="btnGerarLista" onclick="gerarLista('1')">Gerar Pedido</button>
         </div>
     </section>
 
