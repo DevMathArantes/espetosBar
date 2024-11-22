@@ -1,16 +1,19 @@
+//Total pedido no cardápio em R$
 let Total = 0.0;
+
+//Variável aberto/fechado para horário de funcionamento
 let Status;
+
+//Lista de pedidos do cardápio
 let listaFinal = "Seu pedido: <br>";
+
+//Link de pedidos do cardápio
 let link = "https://wa.me/5516992467515/?text=Pedido%0A";
+
 let controle = 0;
-let linkCombo = "https://wa.me/5516992467515/?text=Combo";
-let quant1;
-let quant2;
-let quant3;
-let quant4;
-let quant5;
-let Combo = 0;
-let tipoCombo;
+
+//Link de combo
+let linkCombo = "https://wa.me/5516992467515/?text=Combo%20";
 
 //Variável que confirma a montagem da lista
 let montar = true;
@@ -188,7 +191,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
         }
     }
 
-    //gera a lista final (após as verificações)
+    //gera a lista final (após as verificações), '1' para cardápio e '2' para chopps
     function gerarLista(tipo){
         if(tipo == '1'){
             verificaNome('nome');
@@ -228,42 +231,19 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
 
 
 //Gera o link para pedir combos
-function pedirCombo(identificador){
+function pedirCombo(combo){
     let nome = prompt("Digite o seu nome: ");
     if(nome===""){
         alert("Preencha o campo com seu nome.")
     }
     else{
-        Combo = 'combo'+identificador;
-        switch( Combo){
-            case 'combo1':
-                tipoCombo = "P";
-                quant1 = 2;
-                quant2 = 1;
-                quant3 = "1/2";
-                quant4 = 1;
-                quant5 = "36.90"
-                break;
-            case 'combo2':
-                tipoCombo = "M"
-                quant1 = 4;
-                quant2 = 2;
-                quant3 = "1/2";
-                quant4 = 2;
-                quant5 = "68.90"
-                break;
-            case 'combo3':
-                tipoCombo = "G"
-                quant1 = 6;
-                quant2 = 4;
-                quant3 = 1;
-                quant4 = 3;
-                quant5 = "109.90"
-                break;
+        linkCombo+=combo+"%0A"+nome+"%0A%0A"
+        for(let i = 1; i<=4; i++){
+            linkCombo+=get('combo'+combo+i).innerHTML+"%0A"
         }
-        linkCombo+="%20"+tipoCombo+"%20para%20"+nome+"%0A%0A"+quant1+"%20Espetos%20de%20R$%206.00%0A"+quant2+"%20Espetos%20de%20R$%207.00%0A"+quant3+"%20Tábua%0ATorre%20de%20chopp%20de%20"+quant4+"%20litro(s)%0A%0ATotal:%20R$%20"+quant5;
-        get('combo'+identificador).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkCombo}">Enviar pedido</a>`;
-        get('gerar'+identificador).style.display="none";
+        linkCombo+="%0A"+get('valorCombo'+combo).innerHTML
+        get(combo).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkCombo}">Enviar pedido</a>`;
+        get('gerarCombo'+combo).style.display="none";
     }
 }
 
