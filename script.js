@@ -45,6 +45,9 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
             Total+=valorItem(identificador);
             verificaTotal();
         }
+        else{
+            TotalChopp+=valorItem(identificador);
+        }
     }
 
     //remove os itens
@@ -56,6 +59,9 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
             if(identificador<=38){
                 Total-=valorItem(identificador);
                 verificaTotal();
+            }
+            else{
+                TotalChopp-=valorItem(identificador);
             }
         }
     }
@@ -100,7 +106,6 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
                     + get('produto'+i).innerHTML+"%20(R$"
                     +(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)
                     +")%0A";
-                    TotalChopp+= (parseFloat(get('quantidade'+i).innerHTML)*parseFloat(get('valor'+i).innerHTML));
                 }
             }
         }
@@ -206,7 +211,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
                 coletarPedido(1);
                 listaFinal += forma+`<br>`;
                 listaFinal+=`<br>Total: R$ ${Total.toFixed(2)}<br>`
-                link+="%0ATotal=%20R$"+Total.toFixed(2);
+                link+="%0ATotal=%20R$%20"+Total.toFixed(2);
                 get('modal').innerHTML+=`<p>${listaFinal}</p>`;
                 get('modal').innerHTML+=`<a class="enviarPedido btnPedido" href="${link}">Enviar pedido</a>`
                 get('infoCliente').style.display='none';
@@ -217,7 +222,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
             if(nome != ""){
                 linkChopp +="%0ANome:%20"+nome+"%0A%0A";
                 coletarPedido(2);
-                linkChopp+="%0ATotal=%20R$"+TotalChopp.toString();
+                linkChopp+="%0ATotal=%20R$%20"+TotalChopp.toFixed(2);
                 get('principal').innerHTML+=`<a class="enviarPedido btnPedido" href="${linkChopp}">Enviar pedido</a>`
                 get('gerarChopp').style.display='none';
             }
