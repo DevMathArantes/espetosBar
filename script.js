@@ -217,7 +217,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
             if(nome != ""){
                 linkChopp +="%0ANome:%20"+nome+"%0A%0A";
                 coletarPedido(2);
-                linkChopp+="%0ATotal=%20R$"+TotalChopp;
+                linkChopp+="%0ATotal=%20R$"+TotalChopp.toString();
                 get('principal').innerHTML+=`<a class="enviarPedido btnPedido" href="${linkChopp}">Enviar pedido</a>`
                 get('gerarChopp').style.display='none';
             }
