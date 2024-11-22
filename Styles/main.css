@@ -2,7 +2,7 @@
 main{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 main h2{
     color: var(--cor1);

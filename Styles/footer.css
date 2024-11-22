@@ -21,3 +21,6 @@ footer a{
 footer a img{
     width: 1.5em;
 }
+footer a:hover{
+    text-decoration: underline;
+}

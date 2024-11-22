@@ -88,6 +88,11 @@
     .combo{
         padding-right: 0;
     }
+    .combo:hover{
+        width: 25%;
+        transition: 1s;
+        
+    }
     .combo img{
         margin: 0 auto;
     }
