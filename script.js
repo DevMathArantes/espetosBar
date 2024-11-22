@@ -1,6 +1,9 @@
 //Total pedido no cardápio em R$
 let Total = 0.0;
 
+//Total pedido de chopps
+let TotalChopp = 0.0;
+
 //Variável aberto/fechado para horário de funcionamento
 let Status;
 
@@ -97,6 +100,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
                     + get('produto'+i).innerHTML+"%20(R$"
                     +(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)
                     +")%0A";
+                    TotalChopp+= parseInt(get('quantidade'+i).innerHTML)*parseFloat(get('valor'+i));
                 }
             }
         }
@@ -213,7 +217,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
             if(nome != ""){
                 linkChopp +="%0ANome:%20"+nome+"%0A%0A";
                 coletarPedido(2);
-                link+="%0ATotal=%20R$"+Total.toFixed(2);
+                linkChopp+="%0ATotal=%20R$"+TotalChopp;
                 get('principal').innerHTML+=`<a class="enviarPedido btnPedido" href="${linkChopp}">Enviar pedido</a>`
                 get('gerarChopp').style.display='none';
             }
@@ -223,28 +227,23 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
         }
     }
 
-
-
-
-
-
-
-
-//Gera o link para pedir combos
-function pedirCombo(combo){
-    let nome = prompt("Digite o seu nome: ");
-    if(nome===""){
-        alert("Preencha o campo com seu nome.")
-    }
-    else{
-        linkCombo+=combo+"%0A"+nome+"%0A%0A"
-        for(let i = 1; i<=4; i++){
-            linkCombo+=get('combo'+combo+i).innerHTML+"%0A"
+    //Gera o link para pedir combos
+    function pedirCombo(combo){
+        let nome = prompt("Digite o seu nome: ");
+        if(nome===""){
+            alert("Preencha o campo com seu nome.")
         }
-        linkCombo+="%0A"+get('valorCombo'+combo).innerHTML
-        get(combo).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkCombo}">Enviar pedido</a>`;
-        get('gerarCombo'+combo).style.display="none";
+        else{
+            linkCombo+=combo+"%0A"+nome+"%0A%0A"
+            for(let i = 1; i<=4; i++){
+                linkCombo+=get('combo'+combo+i).innerHTML+"%0A"
+            }
+            linkCombo+="%0A"+get('valorCombo'+combo).innerHTML
+            get(combo).innerHTML+=`<a class='enviarPedido btnPedido' href="${linkCombo}">Enviar pedido</a>`;
+            get('gerarCombo'+combo).style.display="none";
+        }
     }
-}
+
+//Script padrão
 
 aberto();
