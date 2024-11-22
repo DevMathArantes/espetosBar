@@ -100,7 +100,7 @@ let linkChopp ="https://wa.me/5516992467515/?text=Chopp%0A";
                     + get('produto'+i).innerHTML+"%20(R$"
                     +(valorItem(i)*get('quantidade'+i).innerHTML).toFixed(2)
                     +")%0A";
-                    TotalChopp+= parseInt(get('quantidade'+i).innerHTML)*parseFloat(get('valor'+i));
+                    TotalChopp+= (parseFloat(get('quantidade'+i).innerHTML)*parseFloat(get('valor'+i).innerHTML));
                 }
             }
         }
