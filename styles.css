@@ -1,90 +1,89 @@
-/*Estilos*/
+/*Fontes________________________________________________________________________________________________________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*Estilos_______________________________________________________________________________________________________*/
 @import url('Styles/header.css');
 @import url('Styles/main.css');
-@import url('Styles/nav.css');
 @import url('Styles/footer.css');
-@import url('Styles/combos.css');
-@import url('Styles/modal.css');
-@import url('Styles/especiais.css');
 @import url('Styles/cardapio.css');
+@import url('Styles/montar.css');
 @import url('Styles/finalizar.css');
-@import url('Styles/formulario.css');
 
-/*Fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*Variáveis_____________________________________________________________________________________________________*/
 
-/*Variáveis*/
 :root{
-    --fontDestaque: "Montserrat", sans-serif;
-    --fontAlta: "Poppins", sans-serif;
-    --fontPadrao: "Roboto", sans-serif;
-    --fontVertical: "Oswald", sans-serif;
-    --cor1: #f0f0f0;
-    --cor2: #000000;
-    --cor3: #d81111;
-    --cor4: #dbdbdb;
-    --cor5: #999999;
-    --cor6: #ffc400;
-    --cor7: rgba(0, 0, 0, 0.7);
+    --fontTitulos: "Parkinsans", sans-serif;
+    --fontPadrao: "Rubik", sans-serif;
+    --cor1: #5a0000;
+    --cor2: #ffffff;
+    --cor3: #111111;
+    --cor4: #000000;
+    --cor5: #720000;
+    --cor6: rgba(0, 0, 0, 0.5);
+    --cor7: #f1f1f1;
 }
 
-/*Regras*/
+/*Regras_________________________________________________________________________________________________________*/
+
 *{
     box-sizing: border-box;
 }
-.ocultar{
-    display: none;
-}
 body{
     margin: 0;
-    background-color: var(--cor2);
+    background-color: var(--cor7);
+}
+a, h1, h2, h3, h4, h5, h6, button, label, input{
+    font-family: var(--fontTitulos);
 }
 a{
     text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: var(--fontAlta);
-}
-p, a{
-    font-size: 1rem;
+p, span{
     font-family: var(--fontPadrao);
 }
-span, button{
-    font-family: var(--fontDestaque);
+
+/*Curingas_______________________________________________________________________________________________________*/
+
+.listaEscondida{
+    display: none;
+}
+.abrirListaEscondida{
+    display: none;
+}
+.abrirListaEscondida:checked + label + .listaEscondida{
+    display: flex;
 }
 
-/*Botões padrão*/
-.enviarPedido{
-    background-image: url(Assets/Icones/whatsapp.png);
+.modal{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--cor2);
 }
-.gerarPedido{
-    background-image: url(Assets/Icones/pedido.png);
-}
-.btnPedido{
-    background-color: var(--cor3);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: 15%;
-    color: var(--cor1);
-    border: none;
-    padding: 1em;
-    text-align: center;
-    border-radius: 10px;
-    width: 15em;
+
+.voltar{
+    position: fixed;
+    top: 5em;
+    left: 0;
+    background-color: var(--cor1);
+    width: 10em;
+    padding: 1em 2em;
+    color: var(--cor2);
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 5px 5px var(--cor3);
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3em;
+    gap: 1em;
+    z-index: 3;
 }
-
-@media screen and (min-width: 724px){
-    p,a{
-        font-size: 1.1rem;
-    }
-}
-@media screen and (min-width: 1300px){
-    
+.voltar img{
+    width: 1em;
 }

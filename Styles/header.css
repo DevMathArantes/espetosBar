@@ -1,85 +1,120 @@
+/*Header*/
 header{
-    padding: 5em 2em 2em 2em;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    color: var(--cor1);
-    text-align: center;
-    background-image: url(../Assets/Imagens/espetosBar.jpg);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center 35%;
-    height: 170vw;
+    align-items: center;
+    position: relative;
+}
+header img{
+    width: 15em;
 }
 header h1{
+    position: absolute;
+    bottom: 1em;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    padding: 0 1em;
+    border-radius: 10px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
-.headerInfo{
-    font-family: var(--fontDestaque);
-    font-weight: 550;
+
+/*Nav dentro do header*/
+header nav{
     display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0px 5px 10px var(--cor3);
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor1);
+    z-index: 4;
+}
+header nav h2{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    margin-right: auto;
+    color: var(--cor2);
+}
+header nav label{
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../Assets/icons/menu.png);
+    background-size: 100%;
+    margin: 1em;
+}
+header nav input{
+    display: none;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
     flex-direction: column;
+    width: 100%;
+}
+header nav li{
+    text-align: center;
+    display: flex;
+}
+header nav a{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-top: 1px solid var(--cor5);
+    width: 100%;
+    padding: 1em 0 1em 4em;
+    display: flex;
+    align-items: center;
     gap: 1em;
 }
-header span{
-    text-align: left;
-    font-size: 0.7rem;
-    padding: 1em 3em;
-    background-size: 5%;
-    background-repeat: no-repeat;
-    background-position: 0%;
+header nav img{
+    width: 1.5em;
+}
+
+/*Início*/
+.inicio{
+    height: 15em;
     width: 100%;
-}
-header h2{
-    background-image: url(../Assets/Icones/baixo.png);
-    background-size: 7%;
+    background-image: url(../Assets/Imagens/ambiente2.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    width: 100%;
-    padding: 1em;
-    background-position: 10%;
-    font-size: 1rem;
-    margin: 0;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4em;
+    justify-content: center;
+    filter: brightness(0.5);
+    z-index: 0;
 }
-.local{
-    background-image: url(../Assets/Icones/local.png);
-}
-.relogio{
-    background-image: url(../Assets/Icones/relogio.png);
+.inicio h2{
+    text-align: center;
+    color: var(--cor2);
 }
 
 @media screen and (min-width: 724px){
-    header{
-        height: 50vw;
-        align-items: end;
-        background-size: 30%;
-        background-position: 20% 65%;
+
+    /*Transforma a nav*/
+    #links{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: right;
+        padding-right: 2em;
+        gap: 2em;
+    }
+    #links a{
+        padding: 1em 0;
+        width: 8em;
         justify-content: center;
-        gap: 1em;
-        text-align: left;
     }
-    header h1{
-        width: 50%;
-        text-align: left;
+    #links a:hover{
+        text-decoration: underline;
     }
-    .headerInfo{
-        width: 50%;
+    header nav label{
+        display: none;
     }
-    header h2{
-        background-position: 0%;
-        padding: 5vw;
-    }
-}
-@media screen and (min-width: 1300px){
-    header{
-        height: auto;
-        background-size: 20%;
-    }
-    .headerInfo span{
-        background-size: 3%;
-    }
-    .headerInfo h2{
-        background-size: 3%;
-        background-position: 5%;
-    }
+
 }
