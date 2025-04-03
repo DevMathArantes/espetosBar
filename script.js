@@ -97,26 +97,31 @@ function dijuntor(id) {
     }
 }
 
+
 //Retorna true no horário de funcionamento
 let agora = new Date();
 let horas = agora.getHours();
 let minutos = agora.getMinutes();
 let dia = agora.getDay();
 let fechar;
-let retorno = true;
 function aberto() {
-    switch (dia) {
+    let retorno = true;
+    switch(dia){
         case 0:
             retorno = false;
             break;
         case 1:
             retorno = false;
             break;
+        default:
+            if (horas >= 18 && horas < 23) {
+                retorno = true;
+            }
+            else{
+                retorno = false;
+            }
+            break;
     }
-    if (horas < 18 && horas > 23) {
-        retorno = false;
-    }
-    
     return retorno;
 }
 
