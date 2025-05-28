@@ -23,11 +23,13 @@ let espetos = [
     ["Linguiça toscana", "espeto", 7.00, 0],
     ["Pão de alho", "espeto", 7.00, 0],
     ["Tulipa de frango", "espeto", 7.00, 0],
-    ["Medalhão de frango", "espeto", 7.00, 0],
+    ["Medalhão de frango", "espeto", 8.00, 0],
     ["Medalhão de mussarela", "espeto", 8.00, 0],
     ["Medalhão romeu e julieta", "espeto", 8.00, 0],
     ["Medalhão mandioca", "espeto", 8.00, 0],
     ["Panceta", "espeto",  7.00, 0],
+    ["Peixe", "espeto", 8.00, 0],
+    ["Medalhão carne seca", "espeto", 8.00, 0],
     ["Tábua de mandioca e tomate (meia)", "tábua", 6.00, 0],
     ["Tábua de mandioca e tomate (inteira)", "tábua", 8.00, 0]
 ];
