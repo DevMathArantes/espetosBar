@@ -30,6 +30,7 @@ let espetos = [
     ["Panceta", "espeto",  7.00, 0],
     ["Peixe", "espeto", 8.00, 0],
     ["Medalhão carne seca", "espeto", 8.00, 0],
+    ["Carneiro", "espeto", 12.00, 0],
     ["Tábua de mandioca e tomate (meia)", "tábua", 6.00, 0],
     ["Tábua de mandioca e tomate (inteira)", "tábua", 8.00, 0]
 ];
@@ -41,24 +42,29 @@ let gourmets = [
 ];
 let bebidas = [
     ["lista", "bebidas", "vazio"],
-    ["Refrigerante lata", "refrigerante", 5.00, 0],
+    ["Refrigerante lata", "refrigerante", 6.00, 0],
     ["Coca-cola 2 Litros", "refrigerante", 15.00, 0],
     ["Coca-cola 1 Litro", "refrigerante", 10.00, 0],
     ["Guaraná Antártica 1 Litro", "refrigerante", 10.00, 0],
-    ["Água Mineral (com ou sem gás)", "bebida", 3.00, 0],
+    ["Água Mineral (com ou sem gás)", "bebida", 4.00, 0],
     ["Suco de Laranja 250 ML", "suco", 8.00, 0],
     ["Suco de Laranja 500 ML", "suco", 10.00, 0],
-    ["Suco de Laranja 1L", "suco", 18.00, 0]
+    ["Suco de Laranja 1L", "suco", 18.00, 0],
+    ["Suco Del Vale 1L", "suco", 12.00],
+    ["Suco Del Vale 250 Ml", "suco", 5.00]
 ];
 let cervejas = [
     ["lista", "cervejas", "vazio"],
-    ["Skol 600ML", "cerveja", 10.00, 0],
-    ["Brama 600ML", "cerveja",  10.00, 0],
-    ["Antártica 600ML", "cerveja", 10.00, 0],
-    ["Heineken 600ML", "cerveja", 14.00, 0],
+    ["Skol 600ML", "cerveja", 11.00, 0],
+    ["Brama 600ML", "cerveja",  11.00, 0],
+    ["Antártica 600ML", "cerveja", 11.00, 0],
+    ["Heineken 600ML", "cerveja", 15.00, 0],
     ["Heineken 250ML", "cerveja", 7.00, 0],
     ["Heineken Zero Álcool", "cerveja", 9.00, 0],
-    ["Cerveja lata", "cerveja", 5.00, 0],
+    ["Cerveja lata", "cerveja", 6.00, 0],
+    ["Spatem 600 Ml", "cerveja", 11.00, 0],
+    ["Amstel 600 Ml", "cerveja", 11.00, 0],
+    ["Antartica Original 600 Ml", "cerveja", 12.00, 0]
 ];
 let combos = [
     ["carrossel", "combo", "vazio"],
@@ -71,7 +77,7 @@ let chopps = [
     ["CHOPP 300 ML", "Chopp de 300 ml", 7.00, 0],
     ["CHOPP 600 ML", "Chopp de 600 ml", 12.00, 0],
     ["CHOPP 1 LITRO", "Chopp de 1 litro", 20.00, 0],
-    ["CHOPP VINHO LATA", "Chopp vinho lata", 8.00, 0]
+    ["CHOPP VINHO LATA", "Chopp vinho lata", 10.00, 0]
 ]
 
 //Lista geral
