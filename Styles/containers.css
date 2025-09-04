@@ -1,0 +1,594 @@
+/*Título Parão*/
+.tituloPd{
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--corPrincipal);
+  text-align: left;
+  padding: 0 2em;
+}
+
+/*Section padronizada*/
+.sectionPd{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.sectionPd > h2, .sectionPd > p{
+  text-align: center;
+  padding: 0 1em;
+  width: 100%;
+  margin: 0.5em;
+}
+.sectionPd h2{
+  color: var(--corPrincipal);
+}
+
+/*button padronizado*/
+.buttonPd{
+  background-color: var(--corPrincipal);
+  border: 0;
+  padding: 0.7em 2em;
+  margin: 2em 1em;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 30em;
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  box-shadow: 0px 5px 10px var(--cinza);
+}
+.buttonPd img{
+  width: 2em;
+}
+
+.imgPd{
+  width: 100%;
+  max-width: 20em;
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+  border-radius: 10px;
+}
+
+/*Formulário padronizado*/
+.formPd{
+  box-shadow: 0px 5px 10px var(--cinza);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 40em;
+  margin: 2em 3em;
+  padding: 2em 1em;
+  border-radius: 10px;
+}
+.formPd p{
+  margin: 1em;
+}
+.formPd label{
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.formPd input{
+  width: 100%;
+  padding: 1em 1em 1em 3em;
+  border: 1px solid var(--cinzaClaro);
+  border-radius: 5px;
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: 0.5em;
+  color: var(--corPrincipal);
+}
+.formPd::placeholder{
+  color: var(--cinza);
+}
+
+/*Adiciona o icone de lembrete ao input*/
+.lembrete{
+  background-image: url(../Assets/Icons/lembrete.png);
+}
+
+/*Painel com opções de alterar uma quantidade central*/
+.quantidade{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10em;
+  border-radius: 5px;
+  width: 100%;
+  color: var(--cinzaClaro);
+  border: 1px solid var(--cinzaClaro);
+  font-weight: 600;
+  border-radius: 5px;
+}
+.quantidade button{
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid var(--cinzaClaro);
+  border-radius: 5px;
+  width: 5em;
+}
+.quantidade img{
+  width: 1em;
+}
+
+/*Select que divide a tela*/
+.selectDividir{
+  background-color: var(--corPrincipal);
+  color: var(--branco);
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  top: 4.75em;
+  z-index: 1;
+  transition: 1s;
+}
+.selectDividir:hover{
+  background-color: var(--corPrincipalClara);
+  transition: 1s;
+}
+
+/*Div utilizada para campos que devem trocar de imagem*/
+.trocarImagem{
+  height: 25vh;
+  width: 100%;
+  background-image: url(../Assets/Images/tudo.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+}
+
+/*Demonstração padrão de itens*/
+.item{
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+  width: 11em;
+  min-width: 11em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  transition: 1s;
+  padding-bottom: 1em;
+}
+.item img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.item h3{
+  margin: 1em 0 0 0;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 400;
+  padding: 0 0.5em;
+  height: 5em;
+}
+.item p{
+  padding: 0 1em;
+  font-size: 0.6rem;
+  color: var(--cinza);
+  height: 6em;
+  margin: 0;
+}
+.item span{
+  font-weight: 500;
+  width: 100%;
+  font-size: 0.7rem;
+  padding: 0 1em;
+  margin: 0.5em 0;
+}
+.item i{
+  font-size: 1rem;
+}
+
+.campoMontagem{  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  padding: 2em 0;
+}
+.campoMontagem > h3{
+  width: 100%;
+  text-align: center;
+  background-color: var(--corPrincipal);
+  color: var(--branco);
+  padding: 1em;
+  margin: 0;
+  border-radius: 0px 5px 10px var(--cinzaClaro);
+}
+.campoMontagem p{
+  color: var(--cinza);
+  width: 100%;
+  margin: 0;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.selectMontagem{
+  width: 40%;
+  border-radius: 5px;
+  min-width: 20em;
+  box-shadow: 0px 5px 15px var(--cinzaClaro);
+
+}
+.selectMontagem select{
+  width: 100%;
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+  font-weight: 600;
+  color: var(--cinza);
+  border: 0;
+}
+.selectMontagem h4{
+  color: var(--corPrincipal);
+  border-bottom: 2px solid var(--cinzaClaro);
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.itemMontado{
+  width: 100%;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.itemMontado h3{
+  width: 100%;
+  color: var(--corPrincipal);
+  text-align: center;
+  padding: 0 1em;
+}
+
+/*Demonstração de produtos maiores*/
+.itemGrande{
+  position: relative;
+  border-radius: 5px;
+  width: 15em;
+  min-width: 14em;
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+}
+.itemGrande img{
+  width: 100%;
+  border-radius: 5px;
+}
+.itemGrandeTxt{
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  background-color: var(--fundoTransparenteEscuro);
+  color: var(--branco);
+  text-shadow: 0px 0px 3px var(--preto);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  height: 11em;
+}
+.itemGrandeTxt h3{
+  margin: 0 0 auto 0;
+}
+.itemGrandeTxt p{
+  font-size: 0.7rem;
+}
+.itemGrandeTxt span{
+  font-weight: 600;
+}
+
+/*Carrossel horizontal*/
+.carrossel{
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding: 1em 2em;
+}
+
+/*links dividindo a tela*/
+.linksDividir{
+  display: flex;
+  flex-direction: column;
+}
+.linksDividir img{
+  width: 1.5em;
+}
+.linksDividir a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+  font-weight: 500;
+  color: var(--preto);
+}
+
+/*Página dentro da página (aba)*/
+.modal{
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--branco);
+  z-index: 1;
+  overflow-y: auto;
+}
+
+/*Div dividindo a tela que precisa receber uma background-image*/
+.imgDividir{
+    width: 100%;
+    height: 25em;
+   background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+}
+
+  /*Imagem de header1*/
+  .header1Img{ 
+      background-image: url(../Assets/Images/entrada.png);
+  }
+
+  /*Imagem do carrinho*/
+  .imgCarrinho{
+    background-image: url(../Assets/Images/carrinho.png);
+  }
+
+  /*Imagem da aba de pedir produtos*/
+  .prateleira{
+    background-image: url(../Assets/Images/prateleira.png);
+  }
+
+/*Lista de itens para marcar e/ou desmarcar*/
+.checkBoxFormPd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1em 0;
+  gap: 1em;
+}
+.checkBoxFormPd ul{
+  padding: 0;
+}
+.checkBoxPd{
+  border-radius: 10px;
+  width: 100%;
+  max-width: 55em;
+  padding: 1em;
+  box-shadow: 0px 2px 5px var(--cinzaClaro);
+  display: flex;
+  align-items: center;
+}
+.checkBoxPd label{
+  display: flex;
+  gap: 1em;
+  padding: 0 1em;
+}
+.checkBoxPd span{
+  width: auto;
+  margin-left: auto;
+  color: var(--corPrincipal);
+  font-weight: 600;
+}
+
+/*Menu para abrir lista oculta*/
+.abrirListaOculta{
+  display: none;
+}
+.abrirListaOculta + label{
+  background-color: var(--corPrincipal);
+  width: 100%;
+  max-width: 55em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--branco);
+  background-image: url(../Assets/icons/adicionaisFechado.png);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 95%;
+  
+}
+.subForm p{
+  width: 100%;
+}
+.listaOculta{
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.abrirListaOculta:checked + label{
+  background-image: url(../Assets/icons/adicionaisAberto.png);
+}
+.abrirListaOculta:checked + label + .listaOculta{
+  display: flex;
+}
+
+/*CheckBox escondida que abre uma lista a frente do label que serve como botão*/
+.abrirLista{
+  display: none;
+}
+.abrirLista:checked + label + .listaFechada{
+    display: block;
+}
+.abrirLista:checked + label{
+    transition: 0.5s;
+    background-image: url(../Assets/icons/menuAberto.png);
+}
+.listaFechada{
+    display: none;
+}
+
+.compras{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.compras h2, .compras p{
+  text-align: center;
+  margin: 0;
+}
+.itemCompra{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
+  max-width: 55em;
+  box-shadow: 0px 5px 10px var(--cinza);
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.itemCompraImg{
+  background-size: cover;
+  background-position: center;
+  width: 20em;
+  height: auto;
+  min-height: 20em;
+  border-radius: 5px;
+  margin: 0;
+}
+.itemCompra h3{
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: var(--corPrincipal);
+}
+.itemCompra p{
+  border-bottom: 1px solid var(--cinza);
+  padding: 0.5em 0;
+  text-align: left;
+}
+.itemCompraTxt{
+  width: 100%;
+  max-width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.itemCompraTxt span{
+  width: 100%;
+  text-align: end;
+  margin-top: auto;
+  color: var(--cinza);
+  font-weight: 600;
+}
+.itemCompraTxt p{
+  margin: 0;
+  width: 100%;
+  padding: 0.5em;
+}
+
+/*Painel padrão*/
+.painel{
+  width: 90%;
+  max-width: 40em;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+  border-radius: 10px;
+}
+.painel h2{
+  font-size: 1.2rem;
+}
+.painel p{
+  font-size: 1rem;
+}
+.painel img{
+  width: 18em;
+  border-radius: 10px;
+}
+.painel a{
+  background-color: var(--corPrincipal);
+  color: var(--branco);
+  padding: 1em 2em;
+  border-radius: 10px;
+  width: 15em;
+  transition: 1s;
+}
+.painel a:hover{
+  background-color: var(--corPrincipalClara);
+  transition: 1s;
+}
+.painelTxt{
+  width: 18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+}
+.painelTxt a img{
+  width: 1em;
+  border-radius: 0;
+}
+
+.formMaior{
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.formMaior input[type='text'], .formMaior input[type='number']{
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px var(--cinzaClaro);
+}
+.formMaior h3{
+  width: 100%;
+  color: var(--corPrincipal);
+  border-bottom: 2px solid var(--corPrincipal);
+  padding: 0.5em;
+  text-align: center;
+}
+.formMaiorMark{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+
+.formMaior input:checked + label + .subForm{
+  display: flex;
+}
+.subForm{
+  width: 100%;
+  display: none;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: 1em 0;
+  padding-left: 2em;
+}
+.subForm input[type='text'], .subForm input[type='number']{
+  width: 100%;
+}
+
+@media screen and (min-width: 724px){
+
+  /*Reorganização dos links que dividem a tela*/
+  .linksDividir{
+    flex-direction: row;
+    margin: 3em 0 3em 0;
+  }
+  .linksDividir a{
+    width: 12em;  
+    border-bottom: 2px solid var(--cinzaClaro);
+  }
+
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url(Styles/header.css);
+@import url(Styles/main.css);
+@import url(Styles/footer.css);
+@import url(Styles/containers.css);
+
+:root{
+
+    --fontTitulo: "Outfit", sans-serif;
+    --fontTexto: "Inter", sans-serif;
+    --fontEspecial: "Montserrat", sans-serif;
+
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #464646;
+    --cinzaClaro: #aaaaaa;
+    --fundoTransparente: #0000007e;
+    --fundoTransparenteEscuro: #000000c2;
+    --corPrincipal: #550707;
+    --corPrincipalEscura: #240000;
+    --corPrincipalClara: #8d2020;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    z-index: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fontTitulo);
+}
+p, li, input, label{
+    font-family: var(--fontTexto);
+}
+a{
+    text-decoration: none;
+}
+a:hover, button:hover{
+    text-decoration: underline;
+}
+a, span, button, select{
+    font-family: var(--fontEspecial);
+}

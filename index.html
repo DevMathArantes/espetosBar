@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#161661">
+    <title id="tituloPag"></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="web icon" href="Assets/Images/logo.png">
+</head>
+<body>
+
+    <header class="header1">
+        <div class="header1Img imgDividir"></div>
+        
+        <div class="header1Txt">
+            <h2>Olá, seja bem vindo</h2>
+            <h1 id="Titulo"></h1>
+        </div>
+
+        <nav>
+            <input class="abrirLista" id="abrirMenu" type="checkbox" name="abrirMenu">
+            <label for="abrirMenu"></label>
+            <ul class="listaFechada" id="links"></ul>
+            <h2 id="status"></h2>
+            <button onclick="globalAbrirCarrinho()">
+                <img src="Assets/icons/carrinho.png" alt="icone carrinho">
+                <span>Carrinho</span>
+                <p class="contagem" id="contagem">0</p>
+            </button>
+            <a id="endereco">
+                <img src="Assets/icons/endereco.png" alt="icone endereço">
+                <span>Endereço</span>
+            </a>
+            <button onclick="globalInfoStatus()">
+                <img src="Assets/icons/relogio.png" alt="icone relogio">
+                <span>Relógio</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!--Filtro de categorias-->
+        <section class="sectionPd">
+            <h2>Ja sabe o que procura ?</h2>
+            <p>Utilize nosso filtro para encontrar a categoria desejada</p>
+        </section>
+        <select onchange="globalMudarCategoria()" class="selectDividir" id="grupoAtual">
+            <option value="tudo">Ver tudo</option>
+        </select>
+
+        <!--Imagem representando a categoria atual-->
+        <section class="trocarImagem" id="imagemGrupo"></section>
+
+        <!--Categorias de produtos-->
+        <section id="produtos"></section>
+
+        <!--Convite-->
+        <section class="sectionPd">
+            
+            <div class="painel">
+                <img src="Assets/Images/ambiente.png" alt="imagem do ambiente">                
+                <div class="painelTxt">
+                    <h2>Conheça nosso ambiente</h2>
+                    <p>Temos uma equipe pronta para recebe-lo(a) da melhor forma. Baixe o cardápio e se surpreenda.</p>
+                    <a href="Assets/Images/cardapio.pdf" download>
+                        <img src="Assets/icons/download.png" alt="icone download">
+                        Download
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--Modal de montagem do produto-->
+        <section id="montar" class="modal"></section>
+
+        <!--Modal do carrinho-->
+        <section id="carrinho" class="modal"></section>
+        
+    </main>
+
+    <footer id="footer">
+        <p>Developed by Matheus Arantes Ferreira</p>
+        <h2>MAF</h2>
+        <a href="">
+            Acesse nosso site
+            <img src="/Assets/icons/download.png" alt="icone link">
+        </a>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
