@@ -24,6 +24,7 @@ let aviso;
 export function status(){
     diaAtual = funcionamento[dia];
     abrir = diaAtual[0];
+    return true;
     if(abrir == null){
         return false;
     } else{

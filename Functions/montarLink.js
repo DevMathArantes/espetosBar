@@ -1,6 +1,7 @@
 import { get } from "./functions.js";
 import { calculoTotal } from "./calculoTotal.js";
 import { linkMontado } from "./link.js";
+import { valorMinimo } from "../script.js";
 
 export function montarLink(){
     if(verificandoEntrega() && verificaPagamento() && get('nome').value != ""){
@@ -39,6 +40,10 @@ function verificandoEntrega(){
                         return false;
 
                     }
+                }
+                if(calculoTotal() < valorMinimo){
+                    alert("Valor minímo para entrega: R$" + valorMinimo.toFixed(2));
+                    return false;
                 }
             }
             return true;

@@ -47,6 +47,7 @@ const endereco = "https://maps.app.goo.gl/dBq4v5NUoYyKFPen7";
 const instagram = "https://www.instagram.com/espetosbararamina/";
 export const titulo = "Espeto's Bar";
 export const taxaEntrega = 2.00;
+export const valorMinimo = 30.00;
 
 //Montagem de elementos variáveis
 get("Titulo").innerHTML = titulo;

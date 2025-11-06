@@ -1,4 +1,4 @@
-import { taxaEntrega } from "../script.js";
+import { taxaEntrega, valorMinimo } from "../script.js";
 import { get } from "./functions.js";
 
 //Monta a lista de produtos e abre o carrinho
@@ -32,7 +32,7 @@ export function montarFormulario(){
                 <label for="entrega1" id="entregaTxt1">Entrega por endereço</label>
 
                 <div class="subForm">
-                    <p>Taxa de entrega: R$ ${taxaEntrega.toFixed(2)}</p>
+                    <p>Taxa de entrega: R$ ${taxaEntrega.toFixed(2)}, valor minímo para entrega: R$${valorMinimo.toFixed(2)}</p>
 
                     <label>Bairro</label>
                     <input id="endereco1" type="text" placeholder="Informe o bairro">
