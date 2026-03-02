@@ -23,33 +23,33 @@
 
 let combos = [
     [3, "combos", "Combos Especiais", [0], 1],
-    ["COMBO P", "2 espetos de R$ 7.00, 1 espeto de R$ 8.00, 1 torre de chopp 1L, 1/2 tábua", 39.90, 0],
-    ["COMBO M", "4 espetos de R$ 7.00, 2 espeto de R$ 8.00, 1 torre de chopp 2L, 1/2 tábua", 78.90, 0],
-    ["COMBO G", "7 espetos de R$ 7.00, 3 espeto de R$ 8.00, 1 torre de chopp 3L, 1 tábua", 124.90, 0]
+    ["COMBO P", "2 espetos de R$ 8.00, 1 espeto de R$ 9.00, 1 torre de chopp 1L, 1/2 tábua", 45.9, 0],
+    ["COMBO M", "4 espetos de R$ 8.00, 2 espeto de R$ 9.00, 1 torre de chopp 2L, 1/2 tábua", 89.90, 0],
+    ["COMBO G", "7 espetos de R$ 8.00, 3 espeto de R$ 9.00, 1 torre de chopp 3L, 1 tábua", 145.90, 0]
 ]
 
 export let Combos = ["Combos", "Ver Combos", combos];
 
 let tradicionais = [
     [2, "tradicionais", "Espetinhos Tradicionais", [0], 1],
-    ["Bovino", "espeto", 8.00, 0],
-    ["Coração", "espeto", 7.00, 0],
+    ["Bovino", "espeto", 9.00, 0],
+    ["Coração", "espeto", 8.00, 0],
     ["Queijo coalho", "espeto", 8.00, 0],
     ["Queijo bolinha", "espeto", 8.00, 0],
     ["Queijo bolinha defumado", "espeto", 8.00, 0],
-    ["Kafta bovina", "espeto", 7.00, 0],
-    ["Kafta de frango", "espeto", 7.00, 0],
+    ["Kafta bovina", "espeto", 8.00, 0],
+    ["Kafta de frango", "espeto", 8.00, 0],
     ["Kafta recheada", "espeto", 8.00, 0],
-    ["Linguiça suína", "espeto", 7.00, 0],
-    ["Linguiça apimentada", "espeto", 7.00, 0],
-    ["Linguiça toscana", "espeto", 7.00, 0],
-    ["Pão de alho", "espeto", 7.00, 0],
-    ["Tulipa de frango", "espeto", 7.00, 0],
+    ["Linguiça suína", "espeto", 8.00, 0],
+    ["Linguiça apimentada", "espeto", 8.00, 0],
+    ["Linguiça toscana", "espeto", 8.00, 0],
+    ["Pão de alho", "espeto", 8.00, 0],
+    ["Tulipa de frango", "espeto", 8.00, 0],
     ["Medalhão de frango", "espeto", 8.00, 0],
     ["Medalhão de mussarela", "espeto", 8.00, 0],
     ["Medalhão romeu e julieta", "espeto", 8.00, 0],
     ["Medalhão mandioca", "espeto", 8.00, 0],
-    ["Panceta", "espeto",  7.00, 0],
+    ["Panceta", "espeto",  8.00, 0],
     ["Peixe", "espeto", 8.00, 0],
     ["Medalhão carne seca", "espeto", 8.00, 0],
     ["Carneiro", "espeto", 12.00, 0],
