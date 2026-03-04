@@ -64,7 +64,25 @@ let gourmets = [
     ["Queijo coalho com com goiabada", "espeto", 10.00, 0]
 ];
 
-export let Espetos = ["espetos", "Ver Espetos", tradicionais, gourmets];
+let porcoesBatata = [
+    [2, "porcoesBatata", "Porções de batata frita", [0], 1],
+    ["Batata Frita (tradicional)", "Batata Frita tradicional (Inteira)", 30.00, 0],
+    ["Batata Frita (tradicional)", "Batata Frita tradicional (Meia)", 20.00, 0],
+    ["Batata Frita (completa)", "Batata Frita completa com cheddar e bacon (Inteira)", 40.00, 0],
+    ["Batata Frita (completa)", "Batata Frita completa com cheddar e bacon (Meia)", 28.00, 0],
+]
+
+let porcoesPetisco = [
+    [2, "porcoesPetisco", "Porções para petiscar", [0], 1],
+    ["Frango a Passarinho", "Porção de Frango a Passarinho (crocante e bem temperado)", 35.00, 0],
+    ["Tábua Mista da Casa", "Tábua com salaminho, azeitona, tomate, palmito e ovo de codorna", 45.00, 0],
+    ["Filé de Tilápia", "Porção de filé de tilápia com azeitona, tomate e palmito", 60.00, 0],
+    ["Polenta Frita", "Porção de Polenta Frita", 22.00, 0],
+    ["Torresmo", "Porção de torresmo", 45.00, 0],
+    ["Tirinhas de Frango", "Porção de tirinhas de frango", 52.00, 0]
+]
+
+export let Espetos = ["espetos", "Ver Espetos", tradicionais, gourmets, porcoesBatata, porcoesPetisco];
 
 let chopps = [
     [1, "chopps", "Aproveite nossos Chopps", [0], 1],
@@ -76,15 +94,15 @@ let chopps = [
 
 let cervejas = [
     [2, "cervejas", "Confira as Cervejas", [0], 1],
-    ["Skol 600ML", "cerveja", 11.00, 0],
-    ["Brama 600ML", "cerveja",  11.00, 0],
-    ["Antártica 600ML", "cerveja", 11.00, 0],
+    ["Skol 600ML", "cerveja", 12.00, 0],
+    ["Brama 600ML", "cerveja",  12.00, 0],
+    ["Antártica 600ML", "cerveja", 12.00, 0],
     ["Heineken 600ML", "cerveja", 15.00, 0],
     ["Heineken 250ML", "cerveja", 7.00, 0],
     ["Heineken Zero Álcool", "cerveja", 9.00, 0],
     ["Cerveja lata", "cerveja", 6.00, 0],
-    ["Spatem 600 Ml", "cerveja", 11.00, 0],
-    ["Amstel 600 Ml", "cerveja", 11.00, 0],
+    ["Spatem 600 Ml", "cerveja", 12.00, 0],
+    ["Amstel 600 Ml", "cerveja", 12.00, 0],
     ["Antartica Original 600 Ml", "cerveja", 12.00, 0]
 ];
 
